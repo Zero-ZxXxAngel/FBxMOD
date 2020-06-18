@@ -86,19 +86,19 @@ class Brute:
 				obj = user['name'].split(' ')
 				if len(obj) == 1:
 					listpass = [
-						obj[0]+'123', obj[0]+'1234', 'sayang', 'indonesia', 'doraemon', 'anjingkau', 'iloveyou', 'ganteng', 'bangke',
-						obj[0]+'12345', obj[0]+'sayang', 'sayangkamu', ',bangsat', 'anjing', 'kontol', 'moonton',
+						obj[0]+'123', obj[0]+'1234', obj[0]+ 'khan', 'pakistan', 'pakistan1', '786786',
+						obj[0]+'12345', obj[0]+'786', 'pakistan786', 'pakistan123',
 					]
 				elif len(obj) == 2:
 					listpass = [
-						obj[0]+'123', obj[0]+'12345', obj[0]+'1234', 'sayang', 'indonesia', 'doraemon', 'anjingkau', 'iloveyou', 'ganteng', 'bangke',
-						obj[1]+'123', obj[1]+'12345', obj[1]+'1234', 'sayangkamu', ',bangsat', 'anjing', 'kontol', 'moonton',
+						obj[0]+'123', obj[0]+'12345', obj[0]+'1234', obj[0]+'khan', obj[0]+'786', 'pakistan786', 'pakistan123',
+						obj[1]+'123', obj[1]+'12345', obj[1]+'1234', obj[1]+'khan', obj[1]+'786', 'pakistan', 'pakistan1', '786786',
 					]
 				elif len(obj) == 3:
 					listpass = [
-						obj[0]+'123', obj[0]+'12345', obj[1]+'1234', 'sayang', 'indonesia', 'doraemon',
-						obj[1]+'123', obj[1]+'12345', obj[2]+'1234', 'sayangkamu', ',bangsat', 'anjing', 'kontol', 'moonton',
-						obj[2]+'123', obj[2]+'12345', obj[3]+'1234', 'anjingkau', 'iloveyou', 'ganteng', 'bangke',
+						obj[0]+'123', obj[0]+'12345', obj[1]+'1234', obj[1]+'khan', obj[1]+'786', 'pakistan786', 'pakistan123',
+						obj[1]+'123', obj[1]+'12345', obj[2]+'1234', obj[2]+'khan', obj[2]+'786', 'pakistan', 'pakistan1', '786786',
+						obj[2]+'123', obj[2]+'12345', obj[3]+'1234', obj[3]+'khan', obj[3]+'786',
 					]
 				elif len(obj) == 4:
 					listpass = [
