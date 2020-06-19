@@ -16,7 +16,7 @@ def jalan(s):
         sys.stdout.flush()
         time.sleep(random.random() * 0.3)
 
-def loginSC():
+def login():
 	os.system('clear')
 	print"\033[1;97mfind the id and password on my Instagram, you will automatically be transferred to my Instagram\n"
 	os.system('xdg-open https://www.instagram.com/p/CAyBzI5Jaf6/?igshid=t2dmqx0cta0k')
