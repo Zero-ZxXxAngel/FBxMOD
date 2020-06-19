@@ -16,12 +16,12 @@ def jalan(s):
         sys.stdout.flush()
         time.sleep(random.random() * 0.3)
 
-       user = raw_input(‘Username: ‘)
+       user = raw_input('Username: ')
        sandi = getpass.getpass()
-       if sandi == ‘123’ and user == ‘abc’:
-       print ‘Anda Telah Login’
+       if sandi == '123' and user == 'abc':
+       print 'Anda Telah Login'
   else:
-       print ‘Username atau Password Anda Salah’
+       print 'Username atau Password Anda Salah'
 
 def loginFb(self, url, config):
 	os.system('clear')
