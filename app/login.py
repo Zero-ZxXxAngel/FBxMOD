@@ -10,7 +10,7 @@ import sys
 import random,hashlib,re,threading,json,urllib,datetime
 import ConnectionError
 import ThreadPool
-inport browser
+import browser
 
 def jalan(s):
     for c in s + '\n':
