@@ -8,12 +8,20 @@ from src import comment_me
 import time
 import sys
 import random
+import getpass
 
 def jalan(s):
     for c in s + '\n':
         sys.stdout.write(c)
         sys.stdout.flush()
         time.sleep(random.random() * 0.3)
+
+       user = raw_input(‘Username: ‘)
+       sandi = getpass.getpass()
+       if sandi == ‘123’ and user == ‘abc’:
+       print ‘Anda Telah Login’
+  else:
+       print ‘Username atau Password Anda Salah’
 
 def loginFb(self, url, config):
 	os.system('clear')
