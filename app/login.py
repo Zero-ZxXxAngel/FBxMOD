@@ -33,9 +33,9 @@ loop = 'true'
 while (loop == 'true'):
             os.system('clear')
             jalan('\033[1;93mfor your username and password you will be transferred automatically')
-    username = raw_input("\033[1;91m>> \x1b[1;91mUsername \x1b[1;91m>> \x1b[1;92m")
+    username = raw_input('\033[1;91m>> \x1b[1;91mUsername \x1b[1;91m>> \x1b[1;92m')
     if (username == CorrectUsername):
-    	password = raw_input("\033[1;91m>> \x1b[1;91mPassword \x1b[1;91m>> \x1b[1;92m")
+    	password = raw_input('\033[1;91m>> \x1b[1;91mPassword \x1b[1;91m>> \x1b[1;92m')
         if (password == CorrectPassword):
             print "Logged in successfully as " + username #SCRIPT FROM INDONESIA
 	    time.sleep(2)
