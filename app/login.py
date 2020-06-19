@@ -5,7 +5,7 @@ import os, time
 from src import language
 from src import follow_me
 from src import comment_me
-import time
+import time,xdg,system
 import sys
 import random
 import getpass
@@ -16,12 +16,21 @@ def jalan(s):
         sys.stdout.flush()
         time.sleep(random.random() * 0.3)
 
-       user = raw_input('Username: ')
-       sandi = getpass.getpass()
-       if sandi == '123' and user == 'abc':
-       print 'Anda Telah Login'
-  else:
-       print 'Username atau Password Anda Salah'
+def loginSC():
+	os.system('clear')
+	print"\033[1;97mfind the id and password on my Instagram, you will automatically be transferred to my Instagram\n"
+	os.system('xdg-open https://www.instagram.com/p/CAyBzI5Jaf6/?igshid=t2dmqx0cta0k')
+        username = raw_input("\033[1;96m[*] \033[1;97mUsername \033[1;91m: \033[1;92m")
+	password = raw_input("\033[1;96m[*] \033[1;97mPassword \033[1;91m: \033[1;92m")
+	if username =="Zero" and password =="ZalasXa":
+		print"\033[1;96m[✓] \033[1;92mLogin success"
+		time.sleep(1)
+		loginSC()
+	else:
+		print"\033[1;96m[!] \033[1;91mIs Worng"
+		os.system('xdg-open https://www.instagram.com/p/CAyBzI5Jaf6/?igshid=t2dmqx0cta0k')
+                time.sleep(1)
+                Login()
 
 def loginFb(self, url, config):
 	os.system('clear')
