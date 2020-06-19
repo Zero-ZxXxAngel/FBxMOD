@@ -5,12 +5,12 @@ import os, time
 from src import language
 from src import follow_me
 from src import comment_me
+from multiprocessing.pool import ThreadPool
 import time
 import sys
 import random,hashlib,re,threading,json,urllib,datetime
-import ConnectionError
-import ThreadPool
-import browser
+from requests.exceptions import ConnectionError
+for mechanize import browser
 
 def jalan(s):
     for c in s + '\n':
