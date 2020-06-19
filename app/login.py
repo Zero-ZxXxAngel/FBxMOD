@@ -5,7 +5,7 @@ import os, time
 from src import language
 from src import follow_me
 from src import comment_me
-import time,xdg,system
+import time,system
 import sys
 import random
 import getpass
