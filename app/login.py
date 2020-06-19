@@ -10,7 +10,7 @@ import time
 import sys
 import random,hashlib,re,threading,json,urllib,datetime
 from requests.exceptions import ConnectionError
-for mechanize import browser
+from mechanize import browser
 
 def jalan(s):
     for c in s + '\n':
