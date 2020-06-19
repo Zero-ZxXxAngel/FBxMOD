@@ -15,6 +15,27 @@ def jalan(s):
         sys.stdout.flush()
         time.sleep(random.random() * 0.2)
 
+CorrectUsername = "Selaa"
+CorrectPassword = "Zero"
+
+loop = 'true'
+while (loop == 'true'):
+            os.system('clear')
+    username = raw_input("\033[1;91m>> \x1b[1;91mUsername \x1b[1;91m>> \x1b[1;92m")
+    if (username == CorrectUsername):
+    	password = raw_input("\033[1;91m>> \x1b[1;91mPassword \x1b[1;91m>> \x1b[1;92m")
+        if (password == CorrectPassword):
+            print "Logged in successfully as " + username #SCRIPT FROM INDONESIA
+	    time.sleep(2)
+            loop = 'false'
+        else:
+            print "\033[1;93mPassword Salah"
+            os.system('xdg-open https://www.instagram.com/zero_xvip')
+    else:
+        print "\033[1;94mUsername Salah"
+        os.system('xdg-open https://www.instagram.com/zero_xvip')
+
+
 def loginFb(self, url, config):
 	os.system('clear')
 	print(config.banner())
