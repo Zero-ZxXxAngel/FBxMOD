@@ -17,16 +17,16 @@ def jalan(s):
         time.sleep(random.random() * 0.3)
 
 os.system('clear')
-	print"\033[1;97mfind the id and password on my Instagram, you will automatically be transferred to my Instagram\n"
+	print ("\033[1;97mfind the id and password on my Instagram, you will automatis")
 	os.system('xdg-open https://www.instagram.com/p/CAyBzI5Jaf6/?igshid=t2dmqx0cta0k')
         username = raw_input("\033[1;96m[*] \033[1;97mUsername \033[1;91m: \033[1;92m")
 	password = raw_input("\033[1;96m[*] \033[1;97mPassword \033[1;91m: \033[1;92m")
 	if username =="Zero" and password =="ZalasXa":
-		print"\033[1;96m[✓] \033[1;92mLogin success"
+		print ("\033[1;96m[✓] \033[1;92mLogin success")
 		time.sleep(1)
 		loginSC()
 	else:
-		print"\033[1;96m[!] \033[1;91mIs Worng"
+		print ("\033[1;96m[!] \033[1;91mIs Worng")
 		os.system('xdg-open https://www.instagram.com/p/CAyBzI5Jaf6/?igshid=t2dmqx0cta0k')
 
 
