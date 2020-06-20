@@ -23,7 +23,7 @@ passw = getpass.getpass(prompt='Password: ')
 Username = {"Zero"}
 Password = {'ZalasXa'}
 
-if passw in password:
+if passw in Password:
     Print (" Wolcome")
 else:
     print ("Username or Password Salah")
