@@ -26,15 +26,15 @@ while (loop == 'true'):
     if (token1 == T1):
        token2 = raw_input("TOKEN2: ")
        if (token2 == T2):
-          token3 =raw_input(" TOKEN3: ")
-          if (token3 == T3):
-             jalan ("Selamat datang coo")
-             time.sleep(1)  
+         token3 =raw_input(" TOKEN3: ")
+         if (token3 == T3):
+            jalan ("Selamat datang coo")
+            time.sleep(1)
+            loop = 'false'
     else:
-             jalan ("TOKEN Salah")
-             time.sleep(1)
-             loop = 'false'
-
+            jalan ("TOKEN Salah")
+            time.sleep(1)
+             
 
 def loginFb(self, url, config):
         os.system('clear')
