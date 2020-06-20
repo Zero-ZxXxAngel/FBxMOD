@@ -19,7 +19,7 @@ def jalan(s):
 
 def jajan():
         os.system('clear')
-        passw = getpass.getpass(prompt='TOKEN: ')
+        passw = raw_input("TOKEN: ")
 
         TOKEN = {'ZERO0977123'}
 
