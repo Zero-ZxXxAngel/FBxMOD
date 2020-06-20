@@ -16,7 +16,7 @@ def jalan(s):
         sys.stdout.flush()
         time.sleep(random.random() * 0.3)
 
-os.system("clear)
+os.system("clear")
 user = raw_input("Username: ")
 passw = getpass.getpass(prompt='Password: ')
 
