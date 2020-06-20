@@ -16,6 +16,9 @@ def jalan(s):
         sys.stdout.flush()
         time.sleep(random.random() * 0.3)
 
+logo ="""
+Xxxxxxxxxxxxx
+Xxxxxxxxxxxxx"""
 
 def jajan():
         os.system('clear')
