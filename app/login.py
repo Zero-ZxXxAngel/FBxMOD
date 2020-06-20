@@ -24,7 +24,7 @@ Username = {"Zero"}
 Password = {'ZalasXa'}
 
 if passw in Password:
-    Print (" Wolcome")
+    print (" Wolcome")
 else:
     print ("Username or Password Salah")
 
