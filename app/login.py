@@ -19,7 +19,7 @@ def jalan(s):
 def jajan():
       os.system('clear')
 VNMTOKEN = "ZERO0977"
-      passw = raw_input("TOKEN: ")
+      token = raw_input("TOKEN: ")
       if (token == VNMTOKEN):
             jalan ("Selamat datang coo")
             time.sleep(1)
