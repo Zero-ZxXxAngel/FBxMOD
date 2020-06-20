@@ -24,7 +24,7 @@ class Config:
 \t\t\033[0m|  _| | ___ \ \/ / |\/| | | | | | | | \033[1;91m
 \t\t\033[0m| |   | |_/ />  <| |  | \ \_/ / |/ / \033[1;91m
 \t\t\033[0m\_|   \____//_/\_\_|  |_/\___/|___/ \n\033[1;91m
-\t\t\033[1;91mFACEBOOK HACK SCRI\033[0mPT FROM INDONESIA '''
+\t\t\033[1;91mFACEBOOK HACK SCR\033[0mIPT FROM INDONESIA '''
 
         def httpRequest(self, url, cookies):
 		try:
