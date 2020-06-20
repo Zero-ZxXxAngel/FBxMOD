@@ -18,9 +18,9 @@ def jalan(s):
 
 os.system("clear")
 user = raw_input("Username: ")
-   if user in Username:
+if user in Username:
 passw = getpass.getpass(prompt='Password: ')
-   if passw in Password:
+if passw in Password:
          jalan ('Welcome')
     else:
 jalan ('Username or password salah')
