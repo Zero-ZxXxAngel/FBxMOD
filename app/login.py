@@ -18,7 +18,7 @@ def jalan(s):
 
 
 os.system('clear')
-token = getpass.getpass(prompt='Enter Token: ')
+token = getpass.getpass(prompt='Token: ')
 
 TKN = {'ZERO0977123'}
 
