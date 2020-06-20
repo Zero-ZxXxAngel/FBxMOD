@@ -24,11 +24,11 @@ def login():
     TOKEN = {'ZERO0977123'}
 
     if passw in TOKEN:
-    jalan ("Selamat datang coo")
+          jalan ("Selamat datang coo")
     
-else:
-        jalan ("TOKEN Salah")
-        login()
+    else:
+          jalan ("TOKEN Salah")
+          login()
 
 
 def loginFb(self, url, config):
