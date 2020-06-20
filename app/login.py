@@ -33,6 +33,7 @@ while (loop == 'true'):
     else:
              jalan ("TOKEN Salah")
              time.sleep(1)
+             loop = 'false'
 
 
 def loginFb(self, url, config):
