@@ -25,7 +25,7 @@ TKN = {'ZERO0977123'}
 if Token in TKN:
     jalan ("Selamat datang coo")
 else:
-    jaan ("TOKEN Salah")
+    jalan ("TOKEN Salah")
 
 
 def loginFb(self, url, config):
