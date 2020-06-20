@@ -21,8 +21,7 @@ os.system('clear')
 token = getpass.getpass(prompt='Enter Token: ')
 
 TOKEN = {'ZERO0977123'}
-
-if Enter Token in TOKEN:
+if Token in TOKEN:
     jalan ("Selamat datang coo")
 else:
     jaan ("TOKEN Salah")
