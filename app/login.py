@@ -20,10 +20,13 @@ def jalan(s):
 os.system('clear')
 token1 = raw_input("TOKEN1: ")
 if (token1 == T1):
+T1 = "ZERO"
    token2 = raw_input("TOKEN2: ")
    if (token2 == T2):
+   T2 = "ZalasXa"
       token3 =raw_input(" TOKEN3: ")
       if (token3 == T3):
+      T3 = "Angel"
          jalan ("Selamat datang coo")
          time.sleep(1)
          jajan()
@@ -31,10 +34,6 @@ if (token1 == T1):
 else:
          jalan ("TOKEN Salah")
          time.sleep(1)
-
-T1 = "ZERO0977"
-T2 = "ZalasXa"
-T3 = "Angel"
 
 
 def loginFb(self, url, config):
