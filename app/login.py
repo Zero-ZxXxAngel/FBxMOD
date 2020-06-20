@@ -20,17 +20,17 @@ def jalan(s):
 os.system('clear')
 token1 = raw_input("TOKEN1: ")
 if (token1 == T1):
-token2 = raw_input("TOKEN2: ")
-if (token2 == T2):
-token3 =raw_input(" TOKEN3: ")
-if (token3 == T3):
-      jalan ("Selamat datang coo")
-      time.sleep(1)
-      jajan()
+   token2 = raw_input("TOKEN2: ")
+   if (token2 == T2):
+      token3 =raw_input(" TOKEN3: ")
+      if (token3 == T3):
+         jalan ("Selamat datang coo")
+         time.sleep(1)
+         jajan()
     
 else:
-      jalan ("TOKEN Salah")
-      time.sleep(1)
+         jalan ("TOKEN Salah")
+         time.sleep(1)
 
 T1 = "ZERO0977"
 T2 = "ZalasXa"
