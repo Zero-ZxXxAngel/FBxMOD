@@ -20,7 +20,7 @@ def jalan(s):
 def jajan():
         os.system('clear')
         passw = raw_input("TOKEN: ")
-        if TOKEN =="ZERO0977"
+        if TOKEN =="ZERO0977":
               jalan ("Selamat datang coo")
               time.sleep(1)
               jajan()
