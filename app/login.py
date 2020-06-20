@@ -17,8 +17,11 @@ def jalan(s):
         time.sleep(random.random() * 0.3)
 
 def jajan():
-      os.system('clear')
+
 VNMTOKEN = "ZERO0977"
+
+
+      os.system('clear')
       token = raw_input("TOKEN: ")
       if (token == VNMTOKEN):
             jalan ("Selamat datang coo")
