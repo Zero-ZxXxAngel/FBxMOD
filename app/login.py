@@ -16,7 +16,8 @@ def jalan(s):
         sys.stdout.flush()
         time.sleep(random.random() * 0.3)
 
-def lgn():
+
+def jajan():
         os.system('clear')
         passw = getpass.getpass(prompt='TOKEN: ')
 
@@ -25,7 +26,7 @@ def lgn():
         if passw in TOKEN:
               jalan ("Selamat datang coo")
               time.sleep(1)
-              lgn()
+              jajan()
     
         else:
               jalan ("TOKEN Salah")
