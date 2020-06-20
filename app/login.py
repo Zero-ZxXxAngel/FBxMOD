@@ -17,10 +17,6 @@ def jalan(s):
         time.sleep(random.random() * 0.3)
 
 def jajan():
-
-VNMTOKEN = "ZERO0977"
-
-
       os.system('clear')
       token = raw_input("TOKEN: ")
       if (token == VNMTOKEN):
@@ -32,6 +28,8 @@ VNMTOKEN = "ZERO0977"
             jalan ("TOKEN Salah")
             time.sleep(1)
             loginFb()
+
+VNMTOKEN = "ZERO0977"
 
 
 def loginFb(self, url, config):
