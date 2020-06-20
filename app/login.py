@@ -18,7 +18,7 @@ def jalan(s):
 
 
 os.system('clear')
-token = getpass.gatpass(prompt='Token: ')
+token = getpass.getpass(prompt='Token: ')
 
 TOKEN = {'ZERO0977123'}
 
