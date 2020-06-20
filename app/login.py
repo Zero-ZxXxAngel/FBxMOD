@@ -14,7 +14,7 @@ def jalan(s):
     for c in s + '\n':
         sys.stdout.write(c)
         sys.stdout.flush()
-        time.sleep(random.random() * 0.01)
+        time.sleep(random.random() * 0.3)
 
 
     os.system('clear')
