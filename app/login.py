@@ -27,7 +27,6 @@ def jajan():
       else:
             jalan ("TOKEN Salah")
             time.sleep(1)
-            loginFb()
 
 VNMTOKEN = "ZERO0977"
 
