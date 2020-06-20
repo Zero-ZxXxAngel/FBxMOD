@@ -24,6 +24,7 @@ Username = {"Zero"}
 Password = {'ZalasXa'}
 
 if user in Username:
+    jalan (" Welcome")
 else:
     jalan ('username salah')
 
