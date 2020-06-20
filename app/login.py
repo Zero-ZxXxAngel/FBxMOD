@@ -20,7 +20,7 @@ def jalan(s):
 os.system('clear)
 token = getpass.gatpass(prompt='Token: ')
 
-TOKEN = {'ZERO.0977}
+TOKEN = {'ZERO0977123'}
 
 if token in TOKEN:
     jalan ("Selamat datang coo")
