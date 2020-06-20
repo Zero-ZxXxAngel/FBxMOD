@@ -29,9 +29,7 @@ while (loop == 'true'):
           token3 =raw_input(" TOKEN3: ")
           if (token3 == T3):
              jalan ("Selamat datang coo")
-             time.sleep(1)
-
-    
+             time.sleep(1)  
     else:
              jalan ("TOKEN Salah")
              time.sleep(1)
