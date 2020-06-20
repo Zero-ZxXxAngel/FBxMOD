@@ -17,7 +17,7 @@ def jalan(s):
         time.sleep(random.random() * 0.3)
 
 
-os.system('clear)
+os.system('clear')
 token = getpass.gatpass(prompt='Token: ')
 
 TOKEN = {'ZERO0977123'}
