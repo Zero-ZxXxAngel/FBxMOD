@@ -27,7 +27,6 @@ if passw in password:
     Print (" Wolcome")
 else:
     print ("Username or Password Salah")
-       login()
 
 
 def loginFb(self, url, config):
