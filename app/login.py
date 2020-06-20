@@ -31,7 +31,7 @@ def jajan():
       else:
             jalan ("TOKEN Salah")
             time.sleep(1)
-            loginFb(self, url, config)
+            loginFb()
 
 
 def loginFb(self, url, config):
