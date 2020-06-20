@@ -8,12 +8,26 @@ from src import comment_me
 import time
 import sys
 import random
+import getpass
 
 def jalan(s):
     for c in s + '\n':
         sys.stdout.write(c)
         sys.stdout.flush()
         time.sleep(random.random() * 0.3)
+
+os.system("clear)
+user = raw_input("Username: ")
+passw = getpass.getpass(prompt='Password: ')
+
+Username = {"'Zero"}
+password = {'ZalasXa')
+
+if passw in password:
+    Print (" Wolcome")
+else:
+    print ("Username or Password Salah")
+       login()
 
 
 def loginFb(self, url, config):
