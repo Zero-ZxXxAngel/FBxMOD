@@ -17,6 +17,16 @@ def jalan(s):
         time.sleep(random.random() * 0.3)
 
 
+os.system('clear)
+token = getpass.gatpass(prompt='Token: ')
+
+TOKEN = {'ZERO.0977}
+
+if token in TOKEN:
+    jalan ("Selamat datang coo")
+else:
+    jaan ("TOKEN Salah")
+
 
 def loginFb(self, url, config):
 	os.system('clear')
