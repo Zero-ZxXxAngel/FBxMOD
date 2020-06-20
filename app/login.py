@@ -16,17 +16,18 @@ def jalan(s):
         sys.stdout.flush()
         time.sleep(random.random() * 0.3)
 
+T1 = "ZERO"
+T2 = "ZALASXA"
+T3 = "ANGEL"
 
-os.system('clear')
+loop = 'true'
+while (loop == 'true'):
 token1 = raw_input("TOKEN1: ")
 if (token1 == T1):
-T1 = "ZERO"
    token2 = raw_input("TOKEN2: ")
    if (token2 == T2):
-   T2 = "ZalasXa"
       token3 =raw_input(" TOKEN3: ")
       if (token3 == T3):
-      T3 = "Angel"
          jalan ("Selamat datang coo")
          time.sleep(1)
          jajan()
