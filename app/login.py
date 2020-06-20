@@ -23,10 +23,11 @@ passw = getpass.getpass(prompt='Password: ')
 Username = {"Zero"}
 Password = {'ZalasXa'}
 
+if user in Username:
 if passw in Password:
-    print (" Wolcome")
+    jalan ("Wolcome")
 else:
-    print ("Username or Password Salah")
+    jalan ("Username or Password Salah")
 
 
 def loginFb(self, url, config):
