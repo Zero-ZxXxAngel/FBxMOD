@@ -18,20 +18,17 @@ def jalan(s):
 
 os.system("clear")
 user = raw_input("Username: ")
-passw = getpass.getpass(prompt='Password: ')
-
-Username = {"Zero"}
-Password = {'ZalasXa'}
-
 if user in Username:
-    jalan (" Welcome")
-else:
-    jalan ('username salah')
-
+    else:
+         jalan ('username salah')
+passw = getpass.getpass(prompt='Password: ')
 if passw in Password:
-    jalan ("Wolcome")
-else:
-    jalan ("Password Salah")
+         jalan ('Welcome')
+    else:
+jalan ('Username or password salah')
+
+Username = {'Zero'}
+Password = {'ZalasXa'}
 
 
 def loginFb(self, url, config):
