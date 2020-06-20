@@ -16,7 +16,7 @@ def jalan(s):
         sys.stdout.flush()
         time.sleep(random.random() * 0.3)
 
-logo ="""
+logo = """
 Xxxxxxxxxxxxx
 Xxxxxxxxxxxxx"""
 
