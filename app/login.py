@@ -16,24 +16,27 @@ def jalan(s):
         sys.stdout.flush()
         time.sleep(random.random() * 0.3)
 
-T1 = "ZERO"
-T2 = "ZALASXA"
-T3 = "ANGEL"
+K1 = "Zero"
+K2 = "ZalasXa"
+K3 = "?"
+K4 = "ZxXx-Angel"
 
 loop = 'true'
 while (loop == 'true'):
-    token1 = raw_input("TOKEN1: ")
-    if (token1 == T1):
-       token2 = raw_input("TOKEN2: ")
-       if (token2 == T2):
-         token3 =raw_input(" TOKEN3: ")
-         if (token3 == T3):
-            jalan ("Selamat datang coo")
-            time.sleep(1)
-            loop = 'false'
+    key1 = raw_input("KEY1==>> ")
+    if (key1 == K1):
+       key2 = raw_input("KEY2==>> ")
+       if (key2 == K2):
+          key3 =raw_input("KEY3==>> ")
+          if (key3 == K3):
+             key4 =raw_input("KEY4==>> ")
+             if (key4 == K4):
+                jalan ("Selamat datang coo")
+                time.sleep(1)
+                loop = 'false'
     else:
-            jalan ("TOKEN Salah")
-            time.sleep(1)
+                jalan ("TOKEN Salah")
+                time.sleep(1)
              
 
 def loginFb(self, url, config):
