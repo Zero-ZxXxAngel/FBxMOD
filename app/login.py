@@ -30,7 +30,7 @@ def lgn():
         else:
               jalan ("TOKEN Salah")
               time.sleep(1)
-              loginFb()
+              loginFb(self, url, config)
 
 
 def loginFb(self, url, config):
