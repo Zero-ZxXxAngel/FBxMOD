@@ -16,7 +16,7 @@ def jalan(s):
         sys.stdout.flush()
         time.sleep(random.random() * 0.3)
 
-
+def lgn():
 os.system('clear')
 passw = getpass.getpass(prompt='TOKEN: ')
 
@@ -25,10 +25,12 @@ TOKEN = {'ZERO0977123'}
 if passw in TOKEN:
       jalan ("Selamat datang coo")
       time.sleep(1)
+      lgn()
     
 else:
       jalan ("TOKEN Salah")
       time.sleep(1)
+      loginFb()
 
 
 def loginFb(self, url, config):
