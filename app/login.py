@@ -21,17 +21,17 @@ Xxxxxxxxxxxxx
 Xxxxxxxxxxxxx"""
 
 def jajan():
-        os.system('clear')
-        passw = raw_input("TOKEN: ")
-        if passw =="ZERO0977":
-              jalan ("Selamat datang coo")
-              time.sleep(1)
-              jajan()
+      os.system('clear')
+      passw = raw_input("TOKEN: ")
+      if passw =="ZERO0977":
+            jalan ("Selamat datang coo")
+            time.sleep(1)
+            jajan()
     
-        else:
-              jalan ("TOKEN Salah")
-              time.sleep(1)
-              loginFb(self, url, config)
+      else:
+            jalan ("TOKEN Salah")
+            time.sleep(1)
+            loginFb(self, url, config)
 
 
 def loginFb(self, url, config):
