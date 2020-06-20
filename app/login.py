@@ -24,10 +24,13 @@ Username = {"Zero"}
 Password = {'ZalasXa'}
 
 if user in Username:
+else:
+    jalan ('username salah')
+
 if passw in Password:
     jalan ("Wolcome")
 else:
-    jalan ("Username or Password Salah")
+    jalan ("Password Salah")
 
 
 def loginFb(self, url, config):
