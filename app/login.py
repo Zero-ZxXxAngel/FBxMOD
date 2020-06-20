@@ -22,19 +22,19 @@ T3 = "ANGEL"
 
 loop = 'true'
 while (loop == 'true'):
-token1 = raw_input("TOKEN1: ")
-if (token1 == T1):
-   token2 = raw_input("TOKEN2: ")
-   if (token2 == T2):
-      token3 =raw_input(" TOKEN3: ")
-      if (token3 == T3):
-         jalan ("Selamat datang coo")
-         time.sleep(1)
-         jajan()
+    token1 = raw_input("TOKEN1: ")
+    if (token1 == T1):
+       token2 = raw_input("TOKEN2: ")
+       if (token2 == T2):
+          token3 =raw_input(" TOKEN3: ")
+          if (token3 == T3):
+             jalan ("Selamat datang coo")
+             time.sleep(1)
+
     
-else:
-         jalan ("TOKEN Salah")
-         time.sleep(1)
+    else:
+             jalan ("TOKEN Salah")
+             time.sleep(1)
 
 
 def loginFb(self, url, config):
