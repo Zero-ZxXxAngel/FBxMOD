@@ -20,8 +20,8 @@ os.system("clear)
 user = raw_input("Username: ")
 passw = getpass.getpass(prompt='Password: ')
 
-Username = {"'Zero"}
-password = {'ZalasXa')
+Username = {"Zero"}
+Password = {'ZalasXa'}
 
 if passw in password:
     Print (" Wolcome")
