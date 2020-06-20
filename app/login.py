@@ -28,7 +28,6 @@ def login():
     
     else:
           jalan ("TOKEN Salah")
-          login()
 
 
 def loginFb(self, url, config):
