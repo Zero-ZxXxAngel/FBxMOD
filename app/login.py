@@ -17,24 +17,24 @@ def jalan(s):
         time.sleep(random.random() * 0.3)
 
 def lgn():
-    os.system('clear')
-    passw = getpass.getpass(prompt='TOKEN: ')
+        os.system('clear')
+        passw = getpass.getpass(prompt='TOKEN: ')
 
-    TOKEN = {'ZERO0977123'}
+        TOKEN = {'ZERO0977123'}
 
-    if passw in TOKEN:
-          jalan ("Selamat datang coo")
-          time.sleep(1)
-          lgn()
+        if passw in TOKEN:
+              jalan ("Selamat datang coo")
+              time.sleep(1)
+              lgn()
     
-    else:
-          jalan ("TOKEN Salah")
-          time.sleep(1)
-          loginFb()
+        else:
+              jalan ("TOKEN Salah")
+              time.sleep(1)
+              loginFb()
 
 
 def loginFb(self, url, config):
-	os.system('clear')
+        os.system('clear')
 	print(config.banner())
 	jalan('\n\033[1;93mLOGIN FACEBOOK (COOKIE)')
 	while True:
