@@ -17,18 +17,24 @@ def jalan(s):
         time.sleep(random.random() * 0.3)
 
 
-      os.system('clear')
-      token = raw_input("TOKEN: ")
-      if (token == VNMTOKEN):
-            jalan ("Selamat datang coo")
-            time.sleep(1)
-            jajan()
+os.system('clear')
+token1 = raw_input("TOKEN1: ")
+if (token1 == T1):
+token2 = raw_input("TOKEN2: ")
+if (token2 == T2):
+token3 =raw_input(" TOKEN3: ")
+if (token3 == T3):
+      jalan ("Selamat datang coo")
+      time.sleep(1)
+      jajan()
     
-      else:
-            jalan ("TOKEN Salah")
-            time.sleep(1)
+else:
+      jalan ("TOKEN Salah")
+      time.sleep(1)
 
-VNMTOKEN = "ZERO0977"
+T1 = "ZERO0977"
+T2 = "ZalasXa"
+T3 = "Angel"
 
 
 def loginFb(self, url, config):
