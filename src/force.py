@@ -13,7 +13,7 @@ def keluar():
     os.sys.exit()
 
 def main(self, cookie, url, config):
-    os.system('clear')
+    flist = raw_input('\nEnter ID: ')
     try:
         toket = open('login.txt', 'r').read()
     except IOError:
