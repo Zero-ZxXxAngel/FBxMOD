@@ -13,8 +13,7 @@ def keluar():
     os.sys.exit()
 
 def main(self, cookie, url, config):
-        flist = raw_input('\nEnter ID: ')
-            try:
+
                      email = raw_input('\x1b[1;91m[+] \x1b[1;92mID\x1b[1;97m/\x1b[1;92mEmail \x1b[1;97mTarget \x1b[1;91m:\x1b[1;97m ')
                      passw = raw_input('\x1b[1;91m[+] \x1b[1;92mWordlist \x1b[1;97mext(password.txt) \x1b[1;91m: \x1b[1;97m')
                      total = open(passw, 'r')
