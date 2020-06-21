@@ -13,7 +13,7 @@ print "CTRL+C Untuk Keluar"
 print "Thanks To Zero"
 
 def main():
-os.system('clear')
+
 email = str(raw_input("[*]=> Masukan ID Korban : "))
 passwordlist = str(raw_input("List Password.txt : "))
 
