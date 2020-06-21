@@ -9,7 +9,7 @@ from src import friends_list
 from src import friends
 from src import search_name
 from src import likes
-from src import brute_force
+from src import force
 from bs4 import BeautifulSoup as parser
 import time
 import sys
@@ -75,7 +75,7 @@ class Brute(object):
                 elif choose == 5:
                         exit(friends_list.main(self, self.cookie, self.url, self.config))
 		elif choose == 6:
-			exit(brute_force)
+			exit(force.main)
                 elif choose == 7:
                         os.system('clear')
                         jalan('\033[1;94mPlease Wait !')
