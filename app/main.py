@@ -9,7 +9,6 @@ from src import friends_list
 from src import friends
 from src import search_name
 from src import likes
-from src import force
 from bs4 import BeautifulSoup as parser
 import time
 import sys
@@ -81,7 +80,7 @@ class Brute(object):
                         jalan('\033[1;94mPlease Wait !')
 		        os.system('git pull origin master')
 		        raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
-		        menu()
+		        exit()
 		elif choose == 0:
 			ask = raw_input('\nAre you Sure? [y/N]:\033[1;91m ')
 			if ask.lower() == 'y':
