@@ -12,7 +12,7 @@ print "Gunakan Dengan Bijak"
 print "CTRL+C Untuk Keluar"
 print "Thanks To Zero"
 
-def brute_force():
+def main():
 os.system('clear')
 email = str(raw_input("[*]=> Masukan ID Korban : "))
 passwordlist = str(raw_input("List Password.txt : "))
@@ -96,6 +96,3 @@ def check():
     except KeyboardInterrupt:
         print "\n [*] Exiting program ..\n"
         sys.exit(1)
-
-if __name__ == '__main__':
-    check()
