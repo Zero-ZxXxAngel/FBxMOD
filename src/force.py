@@ -1,7 +1,6 @@
 #!usr/bin/python2.7
 # coding=utf-8
 
-import os, re, sys, json
 from bs4 import BeautifulSoup as parser
 from datetime import datetime
 
