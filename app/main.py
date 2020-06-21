@@ -78,6 +78,7 @@ class Brute(object):
 			exit(force.main(self, self.cookie, self.url, self.config))
                 elif choose == 7:
                         os.system('clear')
+                        print('\033[1;94mPlease Wait !')
 		        os.system('git pull origin master')
 		        raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
 		        menu()
