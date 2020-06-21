@@ -75,7 +75,7 @@ class Brute(object):
                 elif choose == 5:
                         exit(friends_list.main(self, self.cookie, self.url, self.config))
 		elif choose == 6:
-			exit(force.main(self, self.cookie, self.url, self.config))
+			exit())
                 elif choose == 7:
                         os.system('clear')
                         jalan('\033[1;94mPlease Wait !')
