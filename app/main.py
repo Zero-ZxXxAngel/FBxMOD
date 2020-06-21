@@ -34,22 +34,11 @@ W = "\033[0;1m"     # White
 R = "\033[31m"    # Red
 C = "\033[36;1m"    # Cyan
 
-def acak(b):
-    w = 'ahtdzjc'
-    d = ''
-    for i in x:
-        d += '!'+w[random.randint(0,len(w)-1)]+i
-    return cetak(d)
-
-
-def cetak(b):
-    w = 'ahtdzjc'
-    for i in w:
-        j = w.index(i)
-        x= x.replace('!%s'%i,'\033[%s;1m'%str(31+j))
-    x += '\033[0m'
-    x = x.replace('!0','\033[0m')
-    sys.stdout.write(x+'\n')
+def runntxt(s):
+        for noobs in s + '\n':
+                sys.stdout.write(noobs)
+                sys.stdout.flush()
+                time.sleep(10. / 2100)
 
 
 def jalan(s):
@@ -112,11 +101,6 @@ class Brute(object):
                 elif choose == 5:
                         exit(friends_list.main(self, self.cookie, self.url, self.config))
 		elif choose == 6:
-def runntxt(s):
-        for noobs in s + '\n':
-                sys.stdout.write(noobs)
-                sys.stdout.flush()
-                time.sleep(10. / 2100)
 
 def banner():
     os.system('clear')
