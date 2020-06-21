@@ -23,7 +23,7 @@ def main():
     try:
         toket = open('login.txt', 'r').read()
     except IOError:
-        jalan '\x1b[1;91m[!] Token not found'
+        print '\x1b[1;91m[!] Token not found'
         os.system('rm -rf login.txt')
         time.sleep(0.3)
         login()
