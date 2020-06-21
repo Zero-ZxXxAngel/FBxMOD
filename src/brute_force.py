@@ -10,9 +10,9 @@ GHT = '''
 '''
 print "Gunakan Dengan Bijak"
 print "CTRL+C Untuk Keluar"
-print "Thanks To Moreno77"
+print "Thanks To Zero"
 
-
+def brute_force()
 email = str(raw_input("[*]=> Masukan ID Korban : "))
 passwordlist = str(raw_input("List Password.txt : "))
 
