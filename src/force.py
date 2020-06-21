@@ -5,7 +5,7 @@ import os, re, sys, json
 from bs4 import BeautifulSoup as parser
 from datetime import datetime
 
-def main(self, cookie, url, config):
+def main(self, self.cookie, self.url, self.config):
     try:
         toket = open('login.txt', 'r').read()
     except IOError:
