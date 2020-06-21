@@ -26,11 +26,12 @@ class Brute(object):
 		self.config = config.Config()
 		self.cookie = self.config.loadCookie()
 		self.menu = '\n'
-		self.menu += ('  [ \033[0;96m01\033[0m ]  \033[1;91mDump Id Friends lists\n')
+		self.menu += ('  [ \033[0;96m01\033[0m ]  \033[1;91mStart Crack\n')
 		self.menu += ('  [ \033[0;96m02\033[0m ]  \033[1;91mDump Id Friends\n')
 		self.menu += ('  [ \033[0;96m03\033[0m ]  \033[1;91mDump Id by Search name\n')
-		self.menu += ('  [ \033[0;96m04\033[0m ]  \033[0mDump Id from likes status\n')
-		self.menu += ('  [ \033[0;96m05\033[0m ]  \033[0mStart Crack\n')
+		self.menu += ('  [ \033[0;96m04\033[0m ]  \033[1;91mDump Id from likes status\n')
+                self.menu += ('  [ \033[1;91m05\033[0m ]  \033[0mDump id Friends lists\n')
+		self.menu += ('  [ \033[0;96m06\033[0m ]  \033[0mBrute Force Attack\n')
 		self.menu += ('  [ \033[0;96m00\033[0m ]  \033[0mRemove cookies\n')
 		if self.cookie == False:
 			login.loginFb(self, self.url, self.config)
@@ -62,15 +63,17 @@ class Brute(object):
 		except ValueError:
 			exit('\n\033[0;91mYou Crazy.\033[0m')
 		if choose == 1:
-			exit(friends_list.main(self, self.cookie, self.url, self.config))
+			exit(crack.Brute().main())
 		elif choose == 2:
 			exit(friends.main(self, self.cookie, self.url, self.config))
 		elif choose == 3:
 			exit(search_name.main(self, self.cookie, self.url, self.config))
 		elif choose == 4:
 			exit(likes.main(self, self.cookie, self.url, self.config))
-		elif choose == 5:
-			exit(crack.Brute().main())
+                elif choose == 5:
+                        exit(friends_list.main(self, self.cookie, self.url, self.config))
+		elif choose == 6:
+			exit(brute_force.main(self, self.cookie, self.url, self.config))
 		elif choose == 0:
 			ask = raw_input('\nAre you Sure? [y/N]:\033[1;91m ')
 			if ask.lower() == 'y':
