@@ -31,8 +31,9 @@ class Brute(object):
 		self.menu += ('  [ \033[0;96m02\033[0m ]  \033[1;91mDump Id Friends\n')
 		self.menu += ('  [ \033[0;96m03\033[0m ]  \033[1;91mDump Id by Search name\n')
 		self.menu += ('  [ \033[0;96m04\033[0m ]  \033[1;91mDump Id from likes status\n')
-                self.menu += ('  [ \033[1;91m05\033[0m ]  \033[0mDump id Friends lists\n')
+                self.menu += ('  [ \033[0;96m05\033[0m ]  \033[0mDump id Friends lists\n')
 		self.menu += ('  [ \033[0;96m06\033[0m ]  \033[0mBrute Force Attack\n')
+                self.menu += ('  [ \033[0;96m07\033[0m ]  \033[0mUpdate Script?\n')
 		self.menu += ('  [ \033[0;96m00\033[0m ]  \033[0mRemove cookies\n')
 		if self.cookie == False:
 			login.loginFb(self, self.url, self.config)
@@ -75,6 +76,11 @@ class Brute(object):
                         exit(friends_list.main(self, self.cookie, self.url, self.config))
 		elif choose == 6:
 			exit(force.main(self, self.cookie, self.url, self.config))
+                elif choose == 7:
+                        os.system('clear')
+		        os.system('git pull origin master')
+		        raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
+		        menu()
 		elif choose == 0:
 			ask = raw_input('\nAre you Sure? [y/N]:\033[1;91m ')
 			if ask.lower() == 'y':
