@@ -18,19 +18,8 @@ def jalan(s):
         sys.stdout.flush()
         time.sleep(random.random() * 0.1)
 
-def main(self, cookie, url, config):
+def main():
     os.system('clear')
-    try:
-        toket = open('login.txt', 'r').read()
-    except IOError:
-        print '\x1b[1;91m[!] Token not found'
-        os.system('rm -rf login.txt')
-        time.sleep(0.3)
-        login()
-    else:
-        os.system('clear')
-        print logo
-        print '\033[1;31;40m ●════════════════════════◄►════════════════════════●'
         try:
             email = raw_input('\x1b[1;91m[+] \x1b[1;92mID\x1b[1;97m/\x1b[1;92mEmail \x1b[1;97mTarget \x1b[1;91m:\x1b[1;97m ')
             passw = raw_input('\x1b[1;91m[+] \x1b[1;92mWordlist \x1b[1;97mext(password.txt) \x1b[1;91m: \x1b[1;97m')
