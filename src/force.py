@@ -67,7 +67,7 @@ def main():
                             print '\x1b[1;91m[!] \x1b[1;93mAccount Checkpoint'
                             print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mUsername \x1b[1;91m:\x1b[1;97m ' + email
                             print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mPassword \x1b[1;91m:\x1b[1;97m ' + pw
-                            
+                            keluar()
                 except requests.exceptions.ConnectionError:
                     print '\x1b[1;91m[!] Connection Error'
                     time.sleep(1)
