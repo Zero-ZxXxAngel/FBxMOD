@@ -1,5 +1,11 @@
-def brute():
-    os.system('clear')
+#!usr/bin/python2.7
+# coding=utf-8
+
+import os, re, sys, json
+from bs4 import BeautifulSoup as parser
+from datetime import datetime
+
+def main(self, cookie, url, config):
     try:
         toket = open('login.txt', 'r').read()
     except IOError:
