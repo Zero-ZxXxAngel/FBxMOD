@@ -1,10 +1,12 @@
 #!usr/bin/python2.7
 # coding=utf-8
 
+import os, sys, time, datetime, random, hashlib, re, threading, json, getpass, urllib, requests, mechanize
 from bs4 import BeautifulSoup as parser
 from datetime import datetime
 
 def main(self, cookie, url, config):
+    os.system('clear')
     try:
         toket = open('login.txt', 'r').read()
     except IOError:
