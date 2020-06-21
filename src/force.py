@@ -3,11 +3,12 @@
 
 import os, sys, time, datetime, random, hashlib, re, threading, json, getpass, urllib, requests, mechanize
 from multiprocessing.pool import ThreadPool
-
 from requests.exceptions import ConnectionError
 from mechanize import Browser
+from bs4 import BeautifulSoup as parser
+from datetime import datetime
 
-def force(self, cookie, url, config):
+    def main(self, cookie, url, config):
     os.system('clear')
     try:
         toket = open('login.txt', 'r').read()
