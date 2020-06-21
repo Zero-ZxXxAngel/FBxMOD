@@ -74,7 +74,7 @@ class Brute(object):
                 elif choose == 5:
                         exit(friends_list.main(self, self.cookie, self.url, self.config))
 		elif choose == 6:
-			exit(brute_force.main(self, self.cookie, self.url, self.config))
+			exit(force.main(self, self.cookie, self.url, self.config))
 		elif choose == 0:
 			ask = raw_input('\nAre you Sure? [y/N]:\033[1;91m ')
 			if ask.lower() == 'y':
