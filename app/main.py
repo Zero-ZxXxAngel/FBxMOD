@@ -9,7 +9,6 @@ from src import friends_list
 from src import friends
 from src import search_name
 from src import likes
-from src import force
 from bs4 import BeautifulSoup as parser
 import time
 import sys
