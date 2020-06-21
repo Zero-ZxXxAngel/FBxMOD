@@ -16,10 +16,10 @@ def jalan(s):
         sys.stdout.flush()
         time.sleep(random.random() * 0.3)
 
-K1 = "Zero"
-K2 = "ZalasXa"
-K3 = "Sumarr-ID"
-K4 = "ZxXx-Angel"
+K1 = ""
+K2 = ""
+K3 = ""
+K4 = ""
 
 loop = 'true'
 while (loop == 'true'):
