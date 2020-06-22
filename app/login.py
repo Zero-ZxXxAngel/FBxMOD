@@ -29,21 +29,21 @@ K2 = "NEVER-DIE"
 loop = 'true'
 while (loop == 'true'):
     print(" ")
-    laju("\033[1;93m============================================================")
+    laju("\033[93;1m============================================================")
     jalan('\033[1;94m                FOR USERNAME AND PASSWORD')
     jalan('\033[1;94m            YOU WILL BE DIVERTED AUTOMATICALLY')
-    laju("\033[1;93m============================================================\n")
+    laju("\033[93;1m============================================================\n")
     os.system('xdg-open https://www.instagram.com/zero_xvip')
-    key1 = raw_input("\033[91mEnter Username==>>\033[1;93m ")
+    key1 = raw_input("\033[91mEnter Username==>>\033[93;1m ")
     if (key1 == K1):
-       key2 = raw_input("\033[0mEnter Password==>>\033[1;93m ")
+       key2 = raw_input("\033[0mEnter Password==>>\033[93;1m ")
        if (key2 == K2):
                 
-                jalan ("welcome to FBxMOD tools, use these tools as wisely as possible")
+                jalan ("\033[94;1mwelcome to FBxMOD tools, use these tools as wisely as possible")
                 time.sleep(1)
                 loop = 'false'
     else:
-                jalan ("Invalid username and password")
+                jalan ("\033[91;1mInvalid username and password")
                 os.system('xdg-open https://www.instagram.com/zero_xvip')
                 time.sleep(1)
              
