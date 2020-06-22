@@ -29,9 +29,9 @@ K2 = "NEVER-DIE"
 loop = 'true'
 while (loop == 'true'):
     print(" ")
-    laju("============================================================")
+    laju("\033[1;93m============================================================")
     jalan('\033[1;94mKALIAN AKAN DI ARAHKAN SECARA OTOMATIS')
-    laju("============================================================\n")
+    laju("\033[1;93m============================================================\n")
     os.system('xdg-open https://www.instagram.com/zero_xvip')
     key1 = raw_input("\033[91mUsername==>>\033[1;93m ")
     if (key1 == K1):
