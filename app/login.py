@@ -29,10 +29,10 @@ K2 = "NEVER-DIE"
 loop = 'true'
 while (loop == 'true'):
     print(" ")
-    laju("\033[93;1m============================================================")
-    jalan('\033[1;94m                FOR USERNAME AND PASSWORD')
-    jalan('\033[1;94m            YOU WILL BE DIVERTED AUTOMATICALLY')
-    laju("\033[93;1m============================================================\n")
+    laju("\033[93;1m     ============================================================")
+    jalan('\033[1;94m                     FOR USERNAME AND PASSWORD')
+    jalan('\033[1;94m                 YOU WILL BE DIVERTED AUTOMATICALLY')
+    laju("\033[93;1m     ============================================================\n")
     os.system('xdg-open https://www.instagram.com/zero_xvip')
     key1 = raw_input("\033[91mEnter Username==>>\033[93;1m ")
     if (key1 == K1):
