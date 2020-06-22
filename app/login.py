@@ -38,11 +38,13 @@ while (loop == 'true'):
     if (key1 == K1):
        key2 = raw_input("\033[0mEnter Password==>>\033[93;1m ")
        if (key2 == K2):
-                
+
+                print(" ")
                 jalan ("\033[94;1mwelcome to FBxMOD tools, use these tools as wisely as possible")
                 time.sleep(1)
                 loop = 'false'
     else:
+                print(" ")
                 jalan ("\033[91;1mInvalid username and password")
                 os.system('xdg-open https://www.instagram.com/zero_xvip')
                 time.sleep(1)
