@@ -14,23 +14,19 @@ def jalan(s):
     for c in s + '\n':
         sys.stdout.write(c)
         sys.stdout.flush()
-        time.sleep(random.random() * 0.3)
+        time.sleep(random.random() * 0.2)
 
-K1 = ""
-K2 = ""
-K3 = ""
-K4 = ""
+K1 = "ANONYMOUS-INDONESIA"
+K2 = "NEVER-DIE"
 
 loop = 'true'
 while (loop == 'true'):
-    key1 = raw_input("KEY1==>> ")
+    jalan('\033[1;94mKALIAN AKAN DI ARAHKAN SECARA OTOMATIS')
+    os.system('xdg-open https://www.instagram.com/zero_xvip')
+    key1 = raw_input("\033[91mUsername==>>\033[1;90m ")
     if (key1 == K1):
-       key2 = raw_input("KEY2==>> ")
+       key2 = raw_input("\033[0mPassword==>>\033[1;90m ")
        if (key2 == K2):
-          key3 =raw_input("KEY3==>> ")
-          if (key3 == K3):
-             key4 =raw_input("KEY4==>> ")
-             if (key4 == K4):
                 jalan ("Selamat datang coo")
                 time.sleep(1)
                 loop = 'false'
@@ -44,7 +40,7 @@ def loginFb(self, url, config):
 	print(config.banner())
 	jalan('\n\033[1;93mLOGIN FACEBOOK (COOKIE)')
 	while True:
-		cookies = raw_input('\033[1;94mENTER COOKIE: ')
+		cookies = raw_input('\033[1;94mENTER COOKIE: \033[1;90m')
 		response = config.httpRequest(url, cookies).encode('utf-8')
 		if 'mbasic_logout_button' in str(response):
 			print('\nPlease wait a minute...')
