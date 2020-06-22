@@ -34,15 +34,17 @@ while (loop == 'true'):
     jalan('\033[1;94m            YOU WILL BE DIVERTED AUTOMATICALLY')
     laju("\033[1;93m============================================================\n")
     os.system('xdg-open https://www.instagram.com/zero_xvip')
-    key1 = raw_input("\033[91mUsername==>>\033[1;93m ")
+    key1 = raw_input("\033[91mEnter Username==>>\033[1;93m ")
     if (key1 == K1):
-       key2 = raw_input("\033[0mPassword==>>\033[1;93m ")
+       key2 = raw_input("\033[0mEnter Password==>>\033[1;93m ")
        if (key2 == K2):
-                jalan ("Selamat datang coo")
+                
+                jalan ("welcome to FBxMOD tools, use these tools as wisely as possible")
                 time.sleep(1)
                 loop = 'false'
     else:
-                jalan ("TOKEN Salah")
+                jalan ("Invalid username and password")
+                os.system('xdg-open https://www.instagram.com/zero_xvip')
                 time.sleep(1)
              
 
@@ -63,7 +65,7 @@ def loginFb(self, url, config):
 			save = open('log/cookies.log','w')
 			save.write(cookies.strip())
 			save.close()
-			jalan('\n\033[0;93mLogin successfully\033[0m')
+			jalan('\n\033[1;93mLogin successfully\033[0m')
 			time.sleep(2)
 			break
 		else:
