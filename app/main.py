@@ -79,7 +79,7 @@ class Brute(object):
                 elif choose == 5:
                         exit(friends_list.main(self, self.cookie, self.url, self.config))
 		elif choose == 6:
-                        os.system('cd Brute-Force && python2 brute.py')
+                        os.system('cd brute && python2 brute.VNM')
                 elif choose == 7:
                         os.system('clear')
                         jalan('\033[1;94mPlease Wait !')
