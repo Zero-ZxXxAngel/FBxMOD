@@ -23,7 +23,7 @@ def jalan(s):
     for c in s + '\n':
         sys.stdout.write(c)
         sys.stdout.flush()
-        time.sleep(random.random() * 0.02)
+        time.sleep(random.random() * 0.05)
 
 class Brute(object):
 	def __init__(self, url):
