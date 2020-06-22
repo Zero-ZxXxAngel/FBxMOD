@@ -30,7 +30,8 @@ loop = 'true'
 while (loop == 'true'):
     print(" ")
     laju("\033[1;93m============================================================")
-    jalan('\033[1;94mKALIAN AKAN DI ARAHKAN SECARA OTOMATIS')
+    jalan('\033[1;94m                FOR USERNAME AND PASSWORD')
+    jalan('\033[1;94m            YOU WILL BE DIVERTED AUTOMATICALLY')
     laju("\033[1;93m============================================================\n")
     os.system('xdg-open https://www.instagram.com/zero_xvip')
     key1 = raw_input("\033[91mUsername==>>\033[1;93m ")
