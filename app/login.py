@@ -16,16 +16,26 @@ def jalan(s):
         sys.stdout.flush()
         time.sleep(random.random() * 0.2)
 
+def laju(s):
+    for c in s + '\n':
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(random.random() * 0.2)
+
+
 K1 = "ANONYMOUS-INDONESIA"
 K2 = "NEVER-DIE"
 
 loop = 'true'
 while (loop == 'true'):
+    print(" ")
+    laju("============================================================")
     jalan('\033[1;94mKALIAN AKAN DI ARAHKAN SECARA OTOMATIS')
+    laju("============================================================\n")
     os.system('xdg-open https://www.instagram.com/zero_xvip')
-    key1 = raw_input("\033[91mUsername==>>\033[1;90m ")
+    key1 = raw_input("\033[91mUsername==>>\033[1;93m ")
     if (key1 == K1):
-       key2 = raw_input("\033[0mPassword==>>\033[1;90m ")
+       key2 = raw_input("\033[0mPassword==>>\033[1;93m ")
        if (key2 == K2):
                 jalan ("Selamat datang coo")
                 time.sleep(1)
