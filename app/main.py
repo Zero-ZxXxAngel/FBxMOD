@@ -61,7 +61,7 @@ class Brute(object):
 		print(self.config.banner())
 		html = parser(response, 'html.parser')
 		jalan('\033[1;91m      ________________________________________________________')
-		jalan('\t\t\n\033[1;94m                 (\033[0;96m•\033[1;94m)    BY: Zero & Sumarr ID \033[1;94m(\033[0;96m•\033[1;94m)')
+		jalan('\t\t\n\033[1;94m                  (\033[0;96m•\033[1;94m)  BY: Zero & Sumarr ID  \033[1;94m(\033[0;96m•\033[1;94m)')
 		jalan('\033[1;91m      ________________________________________________________')
 		print(self.menu)
 		try:
