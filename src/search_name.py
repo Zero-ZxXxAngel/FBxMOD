@@ -10,7 +10,7 @@ def main(self, cookie, url, config):
 	if ask.strip() == '':
 		exit("\n\033[0;91mRequired, can't empty.\033[0m")
 	try:
-		max = int(raw_input('How many? (ex: 100): '))
+		max = int(raw_input('\033[1;92mHow many? \033[1;93m(ex: 100): '))
 	except ValueError:
 		exit("\n\033[0;91mStuppid.\033[0m")
 	if max == 0:
