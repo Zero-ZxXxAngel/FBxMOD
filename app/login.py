@@ -40,13 +40,12 @@ while (loop == 'true'):
        if (key2 == K2):
 
                 print(" ")
-                jalan ("\033[94;1mwelcome to FBxMOD tools, use these tools as wisely as possible")
+                jalan ("\033[91;1mwelcome \033[1;92mto \033[1;93mFBxMOD \033[1;94mtools, \033[1;95muse \033[1;96mthese \033[1;97mtools \033[1;98mas \033[1;99mwisely \033[1;91mas \033[1;92mpossible")
                 time.sleep(1)
                 loop = 'false'
     else:
                 print(" ")
                 jalan ("\033[91;1mInvalid username and password")
-                os.system('xdg-open https://www.instagram.com/zero_xvip')
                 time.sleep(1)
              
 
