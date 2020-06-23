@@ -23,7 +23,7 @@ def laju(s):
         time.sleep(random.random() * 0.05)
 
 
-K1 = "ANONYMOUS-INDONESIA"
+K1 = "ANONYMOUS"
 K2 = "NEVER-DIE"
 
 loop = 'true'
