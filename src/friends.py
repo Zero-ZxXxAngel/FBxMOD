@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup as parser
 from datetime import datetime
 
 def main(self, cookie, url, config):
-	flist = raw_input('\nEnter friends list url: ')
+	flist = raw_input('\n\033[1;94mEnter friends list url: ')
 	try:
 		domain = flist.split('//')[1].split('/')[0]
 		flist = flist.replace(domain, 'mbasic.facebook.com')
@@ -44,7 +44,7 @@ def main(self, cookie, url, config):
 					sys.stdout.write("\r - %s                                        \r\n[\033[0;96m%s\033[0m] [\033[0;91m%s\033[0m] Writing Id don't close."%(
 						full_name, datetime.now().strftime('%H:%M:%S'), len(id)
 					)); sys.stdout.flush()
-			if 'Lihat Teman Lain' in str(html):
+			if 'See other friends' in str(html):
 				flist = url+html.find('a', string='See other friends')['href']
 			else: break
 		except KeyboardInterrupt:
