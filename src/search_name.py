@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup as parser
 from datetime import datetime
 
 def main(self, cookie, url, config):
-	ask = raw_input('\n\033[1;96mQuery name: ')
+	ask = raw_input('\n\033[1;96mQuery name\033[1;90m: ')
 	if ask.strip() == '':
 		exit("\n\033[0;91mRequired, can't empty.\033[0m")
 	try:
@@ -40,7 +40,7 @@ def main(self, cookie, url, config):
 						uid = re.findall('/(.*?)\?refid=', str(i))
 					if len(uid) == 1:
 						id.append({'uid': uid[0], 'name': full_name})
-					sys.stdout.write("\r - %s                                        \r\n[\033[0;96m%s\033[0m] [\033[0;91m%s\033[0m] Writing Id don't close."%(
+					sys.stdout.write("\r - %s                                        \r\n\033[1;94m[\033[0;96m%s\033[1;94m] [\033[0;96m%s\033[1;94m] \033[1;91mDon't close."%(
 						full_name, datetime.now().strftime('%H:%M:%S'), len(id)
 					)); sys.stdout.flush()
 					if len(id) == max or len(id) > max:
