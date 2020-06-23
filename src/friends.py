@@ -44,8 +44,8 @@ def main(self, cookie, url, config):
 					sys.stdout.write("\r - %s                                        \r\n\033[1;94m[\033[0;96m%s\033[1;94m] [\033[0;96m%s\033[1;94m] \033[0mDon't close."%(
 						full_name, datetime.now().strftime('%H:%M:%S'), len(id)
 					)); sys.stdout.flush()
-			if 'See other friends' in str(html):
-				flist = url+html.find('a', string='See other friends')['href']
+			if 'Lihat Teman Lain' in str(html):
+				flist = url+html.find('a', string='Lihat Teman Lain')['href']
 			else: break
 		except KeyboardInterrupt:
 			print('\n\n\033[0;91mKeyInterrupt, stopped!!\033[0m')
