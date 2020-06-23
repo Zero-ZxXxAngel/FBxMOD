@@ -19,9 +19,9 @@ def main(self, cookie, url, config):
 	if len(output) == 0 and len(_output) == 0:
 		exit('\n\033[0;91mInvalids url!\033[0m')
 	elif len(output) != 0:
-		output = 'dump/'+output[0]+'.json'
+		output = 'set/'+output[0]+'.json'
 	else:
-		output = 'dump/'+_output[0]+'.json'
+		output = 'set/'+_output[0]+'.json'
 
 	id = []
 	print('')
@@ -51,10 +51,10 @@ def main(self, cookie, url, config):
 			print('\n\n\033[0;91mKeyInterrupt, stopped!!\033[0m')
 			break
 	try:
-		for filename in os.listdir('dump'):
-			os.remove('dump/'+filename)
+		for filename in os.listdir('set'):
+			os.remove('set/'+filename)
 	except: pass
 	print('\n\nOutput: '+output)
 	save = open(output, 'w')
-	save.write(json.dumps(id))
+	save.write(json.sets(id))
 	save.close()
