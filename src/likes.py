@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup as parser
 from datetime import datetime
 
 def main(self, cookie, url, config):
-	post = raw_input('\n\033[1;96mEnter post url: ')
+	post = raw_input('\n\033[1;96mEnter post url:\033[1;90m ')
 	try:
 		domain = post.split('//')[1].split('/')[0]
 		post = post.replace(domain, 'mbasic.facebook.com')
@@ -50,7 +50,7 @@ def main(self, cookie, url, config):
 						uid = re.findall('\/(.*?)$', href['href'])
 					if len(uid) == 1:
 						id.append({'uid': uid[0].replace('/',''), 'name': full_name})
-					sys.stdout.write("\r - %s                                        \r\n[\033[0;96m%s\033[0m] [\033[0;91m%s\033[0m] Writing Id don't close."%(
+					sys.stdout.write("\r - %s                                        \r\n\033[1;94m[\033[0;96m%s\033[1;94m] [\033[0;96m%s\033[1;94m] \033[1;91mDon't close."%(
 						full_name, datetime.now().strftime('%H:%M:%S'), len(id)
 					)); sys.stdout.flush()
 					if len(id) == max or len(id) > max:
