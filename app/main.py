@@ -32,11 +32,11 @@ class Brute(object):
 		self.cookie = self.config.loadCookie()
 		self.menu = '\n'
 		self.menu += ('  [ \033[0;96m01\033[0m ]  \033[1;91mStart Crack\n')
-		self.menu += ('  [ \033[0;96m02\033[0m ]  \033[1;91mDump Id Friends\n')
-		self.menu += ('  [ \033[0;96m03\033[0m ]  \033[1;91mDump Id by Search name\n')
-		self.menu += ('  [ \033[0;96m04\033[0m ]  \033[1;91mDump Id from likes status\n')
-                self.menu += ('  [ \033[1;96m05\033[0m ]  \033[0mDump id Friends lists\n')
-		self.menu += ('  [ \033[0;96m06\033[0m ]  \033[0m(Download) Brute Force Attack\n')
+		self.menu += ('  [ \033[0;96m02\033[0m ]  \033[1;91mSet Id Friends\n')
+		self.menu += ('  [ \033[0;96m03\033[0m ]  \033[1;91mSet Id by Search name\n')
+		self.menu += ('  [ \033[0;96m04\033[0m ]  \033[1;91mSet Id from likes status\n')
+                self.menu += ('  [ \033[1;96m05\033[0m ]  \033[0mSet id Friends lists\n')
+		self.menu += ('  [ \033[0;96m06\033[0m ]  \033[0mBrute Force Attack\n')
                 self.menu += ('  [ \033[1;96m07\033[0m ]  \033[0mUpdate Script?\n')
 		self.menu += ('  [ \033[0;96m00\033[0m ]  \033[0mRemove cookies\n')
 		if self.cookie == False:
