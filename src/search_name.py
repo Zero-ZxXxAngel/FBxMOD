@@ -47,8 +47,8 @@ def main(self, cookie, url, config):
 						statusStop = True
 						break
 			if statusStop == False:
-				if 'See Further Results' in str(html):
-					url_search = html.find('a', string='See Further Results')['href']
+				if 'Lihat Hasil Selanjutnya' in str(html):
+					url_search = html.find('a', string='Lihat Hasil Selanjutnya')['href']
 				else: break
 			else: break
 		except KeyboardInterrupt:
