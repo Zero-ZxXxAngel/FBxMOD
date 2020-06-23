@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup as parser
 from datetime import datetime
 
 def main(self, cookie, url, config):
-	ask = raw_input('\nQuery name: ')
+	ask = raw_input('\n\033[1;96mQuery name: ')
 	if ask.strip() == '':
 		exit("\n\033[0;91mRequired, can't empty.\033[0m")
 	try:
@@ -47,8 +47,8 @@ def main(self, cookie, url, config):
 						statusStop = True
 						break
 			if statusStop == False:
-				if 'Lihat Hasil Selanjutnya' in str(html):
-					url_search = html.find('a', string='Lihat Hasil Selanjutnya')['href']
+				if 'See Further Results' in str(html):
+					url_search = html.find('a', string='See Further Results')['href']
 				else: break
 			else: break
 		except KeyboardInterrupt:
