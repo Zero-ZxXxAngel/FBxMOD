@@ -8,7 +8,7 @@ from datetime import datetime
 def main(self, cookie, url, config):
 	id = []
 	flist = url+'/friends/center/friends/'
-	output = 'set/friends_list.json'
+	output = 'dump/friends_list.json'
 	print('')
 	while True:
 		try:
@@ -36,10 +36,10 @@ def main(self, cookie, url, config):
 			print('\n\n\033[0;91mKeyInterrupt, stopped!!\033[0m')
 			break
 	try:
-		for filename in os.listdir('set'):
-			os.remove('set/'+filename)
+		for filename in os.listdir('dump'):
+			os.remove('dump/'+filename)
 	except: pass
 	print('\n\nOutput: '+output)
 	save = open(output, 'w')
-	save.write(json.sets(id))
+	save.write(json.dumps(id))
 	save.close()
