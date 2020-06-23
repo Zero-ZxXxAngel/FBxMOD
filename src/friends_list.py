@@ -26,7 +26,7 @@ def main(self, cookie, url, config):
 						uid = re.findall('/(.*?)\?fref=',find['href'])
 					if len(uid) == 1:
 						id.append({'uid': uid[0], 'name': full_name})
-					sys.stdout.write("\r - %s                                        \r\n\033[1;94m[\033[0;96m%s\033[1;94mm] [\033[0;94m%s\033[1;94m] \033[1;91mDon't close."%(
+					sys.stdout.write("\r - %s                                        \r\n\033[1;94m[\033[0;96m%s\033[1;94mm] [\033[0;94m%s\033[1;94m] \033[0mDon't close."%(
 						full_name, datetime.now().strftime('%H:%M:%S'), len(id)
 					)); sys.stdout.flush()
 			if 'View more' in str(html):
