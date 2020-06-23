@@ -29,8 +29,8 @@ def main(self, cookie, url, config):
 					sys.stdout.write("\r - %s                                        \r\n[\033[0;96m%s\033[0m] [\033[0;91m%s\033[0m] Writing Id don't close."%(
 						full_name, datetime.now().strftime('%H:%M:%S'), len(id)
 					)); sys.stdout.flush()
-			if 'Lihat selengkapnya' in str(html):
-				flist = url+html.find('a', string='Lihat selengkapnya')['href']
+			if 'View more' in str(html):
+				flist = url+html.find('a', string='View more')['href']
 			else: break
 		except KeyboardInterrupt:
 			print('\n\n\033[0;91mKeyInterrupt, stopped!!\033[0m')
