@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup as parser
 from datetime import datetime
 
 def main(self, cookie, url, config):
-	post = raw_input('\n\033[1;96mEnter post url:\033[1;90m ')
+	post = raw_input('\n\033[1;96mEnter post url==>>\033[1;90m ')
 	try:
 		domain = post.split('//')[1].split('/')[0]
 		post = post.replace(domain, 'mbasic.facebook.com')
