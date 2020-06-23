@@ -19,7 +19,7 @@ def main(self, cookie, url, config):
 	url_search = url+'/search/people/?q='+ask
 
 	statusStop = False
-	output = 'set/'+ask.replace(' ', '_')+'.json'.strip()
+	output = 'dump/'+ask.replace(' ', '_')+'.json'.strip()
 	id = []
 	print('')
 
@@ -55,10 +55,10 @@ def main(self, cookie, url, config):
 			print('\n\n\033[0;91mKeyInterrupt, stopped!!\033[0m')
 			break
 	try:
-		for filename in os.listdir('set'):
-			os.remove('set/'+filename)
+		for filename in os.listdir('dump'):
+			os.remove('dump/'+filename)
 	except: pass
 	print('\n\nOutput: '+output)
 	save = open(output, 'w')
-	save.write(json.sets(id))
+	save.write(json.dumps(id))
 	save.close()
