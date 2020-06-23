@@ -57,8 +57,8 @@ def main(self, cookie, url, config):
 						statusStop = True
 						break
 			if statusStop == False:
-				if 'Lihat Selengkapnya' in str(html):
-					url_likes = url+html.find('a', string='Lihat Selengkapnya')['href']
+				if 'View more' in str(html):
+					url_likes = url+html.find('a', string='View more')['href']
 				else: break
 			else: break
 		except KeyboardInterrupt:
