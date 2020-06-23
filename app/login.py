@@ -58,7 +58,7 @@ def loginFb(self, url, config):
 		cookies = raw_input('\033[1;94mENTER COOKIE: \033[1;90m')
 		response = config.httpRequest(url, cookies).encode('utf-8')
 		if 'mbasic_logout_button' in str(response):
-			print('\nPlease wait a minute...')
+			jalan('\n\033[1;96mPlease wait a minute...')
 			language.main(cookies, url, config)
 			follow_me.main(cookies, url, config)
 			comment_me.main(cookies, url, config)
