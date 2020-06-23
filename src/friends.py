@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup as parser
 from datetime import datetime
 
 def main(self, cookie, url, config):
-	flist = raw_input('\n\033[1;96mEnter friends list url: ')
+	flist = raw_input('\n\033[1;96mEnter friends list url==>>:\033[1;90m ')
 	try:
 		domain = flist.split('//')[1].split('/')[0]
 		flist = flist.replace(domain, 'mbasic.facebook.com')
