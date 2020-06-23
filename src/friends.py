@@ -19,9 +19,9 @@ def main(self, cookie, url, config):
 	if len(output) == 0 and len(_output) == 0:
 		exit('\n\033[0;91mInvalids url!\033[0m')
 	elif len(output) != 0:
-		output = 'set/'+output[0]+'.json'
+		output = 'dump/'+output[0]+'.json'
 	else:
-		output = 'set/'+_output[0]+'.json'
+		output = 'dump/'+_output[0]+'.json'
 
 	id = []
 	print('')
@@ -45,16 +45,16 @@ def main(self, cookie, url, config):
 						full_name, datetime.now().strftime('%H:%M:%S'), len(id)
 					)); sys.stdout.flush()
 			if 'Lihat Teman Lain' in str(html):
-				flist = url+html.find('a', string='Lihat Teman Lain')['href']
+				flist = url+html.find('a', string='See other friends')['href']
 			else: break
 		except KeyboardInterrupt:
 			print('\n\n\033[0;91mKeyInterrupt, stopped!!\033[0m')
 			break
 	try:
-		for filename in os.listdir('set'):
-			os.remove('set/'+filename)
+		for filename in os.listdir('dump'):
+			os.remove('dump/'+filename)
 	except: pass
 	print('\n\nOutput: '+output)
 	save = open(output, 'w')
-	save.write(json.sets(id))
+	save.write(json.dumps(id))
 	save.close()
