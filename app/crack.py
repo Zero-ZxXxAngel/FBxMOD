@@ -75,7 +75,7 @@ class Brute:
 
 	def main(self):
 		while True:
-			file = raw_input('\nList id (ex: dump/xxx.json): ')
+			file = raw_input('\nList id (ex: VNM/xxx.json): ')
 			try:
 				list = open(file, 'r').read()
 				object = json.loads(list)
