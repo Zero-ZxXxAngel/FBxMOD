@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup as parser
 from datetime import datetime
 
 def main(self, cookie, url, config):
-	ask = raw_input('\n\033[1;96mQuery name\033[1;90m: ')
+	ask = raw_input('\n\033[1;96mQuery name==>> \033[1;90m')
 	if ask.strip() == '':
 		exit("\n\033[0;91mRequired, can't empty.\033[0m")
 	try:
