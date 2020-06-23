@@ -22,7 +22,7 @@ def main(self, cookie, url, config):
 	if url_likes == None:
 		exit('\n\033[0;91mNot found :(\033[0m')
 	try:
-		max = int(raw_input('How many? (ex: 100): '))
+		max = int(raw_input('\033[1;92mHow many? \033[1;93m(ex: 5000): '))
 	except ValueError:
 		exit("\n\033[0;91mStuppid.\033[0m")
 	if max == 0:
