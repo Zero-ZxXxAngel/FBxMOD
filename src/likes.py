@@ -50,7 +50,7 @@ def main(self, cookie, url, config):
 						uid = re.findall('\/(.*?)$', href['href'])
 					if len(uid) == 1:
 						id.append({'uid': uid[0].replace('/',''), 'name': full_name})
-					sys.stdout.write("\r - %s                                        \r\n\033[1;94m[\033[0;96m%s\033[1;94m] [\033[0;96m%s\033[1;94m] \033[1;91mDon't close."%(
+					sys.stdout.write("\r - %s                                        \r\n\033[1;94m[\033[0;96m%s\033[1;94m] [\033[0;96m%s\033[1;94m] \033[0mDon't close."%(
 						full_name, datetime.now().strftime('%H:%M:%S'), len(id)
 					)); sys.stdout.flush()
 					if len(id) == max or len(id) > max:
