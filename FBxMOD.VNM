@@ -24,7 +24,7 @@ print(" \033[1;94m[\033[0m2\033[1;94m] Server Pakistan")
 print(" \033[1;94m[\033[0m3\033[1;94m] Server Bangladesh\n")
 pilih = raw_input('Silahkan Di Pilih: ')
 if pilih == "1":
-        os.system('python2 A1')
+        os.system('cd V1 && python2 A1')
 elif pilih == "2":
         os.system('python2 A2')
 elif pilih == "3":
