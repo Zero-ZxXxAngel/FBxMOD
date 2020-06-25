@@ -8,7 +8,7 @@ def jalan(s):
         sys.stdout.write(c)
         sys.stdout.flush()
         time.sleep(random.random() * 0.02)
-
+os.system('clear')
 jalan("\t\t\033[1;91m____________     ___  ______________")
 jalan("\t\t\033[1;91m|  ___| ___ \    |  \/  |  _  |  _  |")
 jalan("\t\t\033[1;91m| |_  | |_/ /_  _| .  . | | | | | | |")
