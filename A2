@@ -2,7 +2,7 @@
 # coding=utf-8
 
 import os, sys, shutil
-from app import main as app
+from app2 import main as app2
 import time
 import sys
 import random
