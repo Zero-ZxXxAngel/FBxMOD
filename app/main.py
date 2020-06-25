@@ -48,7 +48,7 @@ class Brute(object):
 		if 'mbasic_logout_button' in str(response):
 			self.main(response)
 		else:
-			os.remove('cd && cd FBxMOD && log/cookies.log')
+			os.remove('log/cookies.log')
 			print('\n\033[0;91m[WARNING] Cookies invalids, please login again.\033[0m')
 			raw_input('\n[ Press Enter]')
 			login.loginFb(self, self.url, self.config)
@@ -91,7 +91,7 @@ class Brute(object):
 			if ask.lower() == 'y':
 				jalan('\nRemoving cookies...')
 				time.sleep(2)
-				os.remove('cd && cd FBxMOD && log/cookies.log')
+				os.remove('log/cookies.log')
 				jalan('\n\033[1;92mSuccess removed!\033[0m')
 				time.sleep(2)
 				login.loginFb(self, self.url, self.config)
