@@ -18,11 +18,12 @@ jalan("\t\t\033[0m\_|   \____//_/\_\_|  |_/\___/|___/")
 jalan("\t\t\033[1;91mFACEBOOK HACK SCR\033[0mIPT FROM INDONESIA\n")
 
 print(" ")
-jalan("\033[1;96m Server list\n")
-print(" \033[1;94m[\033[0m1\033[1;94m] \033[1;93mServer \033[1;92m(\033[0mIndonesia\033[1;92m)")
-print(" \033[1;94m[\033[0m2\033[1;94m] \033[1;93mServer \033[1;92m(\033[0mPakistan\033[1;92m)")
-print(" \033[1;94m[\033[0m3\033[1;94m] \033[1;93mServer \033[1;92m(\033[0mBangladesh\033[1;92m)")
-print(" \033[1;94m[\033[0m4\033[1;94m] \033[1;93mServer \033[1;92m(\033[1;91mDestroyer\033[1;92m)\n")
+print("\033[1;96m Server list\n")
+print(" \033[1;94m[\033[0m1\033[1;94m] \033[1;93mServer \033[1;92m(\033[1;94mIndonesia\033[1;92m)")
+print(" \033[1;94m[\033[0m2\033[1;94m] \033[1;93mServer \033[1;92m(\033[1;94mPakistan\033[1;92m)")
+print(" \033[1;94m[\033[0m3\033[1;94m] \033[1;93mServer \033[1;92m(\033[1;94mBangladesh\033[1;92m)")
+print(" \033[1;94m[\033[0m4\033[1;94m] \033[1;93mServer \033[1;92m(\033[1;91mDestroyer\033[1;92m)")
+print(" \033[1;94m[\033[0m5\033[1;94m] \033[1;94mBrute Force Attack")
 pilih = raw_input(' \033[1;95mPlease choose\033[0m==>> \033[1;90m')
 if pilih == "1":
         os.system('python2 A1')
@@ -30,6 +31,8 @@ elif pilih == "2":
         os.system('python2 A2')
 elif pilih == "3":
         os.system('python2 A3')
+elif pilih == "3":
+        os.system('python2 xv')
 
 
 
