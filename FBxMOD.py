@@ -22,7 +22,11 @@ print(" [2] Server Pakistan")
 print(" [3] Server Bangladesh\n")
 pilih = raw_input('Silahkan Di Pilih: ')
 if pilih == "1":
-        os.system('python2 FBxMOD.VNM')
+        os.system('python2 A1')
+elif pilih == "2":
+        os.system('python2 A2')
+elif pilih == "3":
+        os.system('python2 A3')
 
 
 
