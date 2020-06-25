@@ -23,32 +23,6 @@ def laju(s):
         time.sleep(random.random() * 0.05)
 
 
-K1 = "ANONYMOUS"
-K2 = "NEVER-DIE"
-
-loop = 'true'
-while (loop == 'true'):
-    print(" ")
-    laju("\033[93;1m     ============================================================")
-    jalan('\033[1;94m                     FOR USERNAME AND PASSWORD')
-    jalan('\033[1;94m                 YOU WILL BE DIVERTED AUTOMATICALLY')
-    laju("\033[93;1m     ============================================================\n")
-    os.system('xdg-open https://www.instagram.com/zero_xvip')
-    key1 = raw_input("\033[91mEnter Username==>>\033[93;1m ")
-    if (key1 == K1):
-       key2 = raw_input("\033[0mEnter Password==>>\033[93;1m ")
-       if (key2 == K2):
-
-                print(" ")
-                jalan ("\033[96;1mwelcome \033[1;96mto \033[1;96mFBxMOD \033[1;96mtools, \033[1;96muse \033[1;96mthese \033[1;96mtools \033[1;96mas \033[1;96mwisely \033[1;96mas \033[1;96mpossible")
-                time.sleep(1)
-                loop = 'false'
-    else:
-                print(" ")
-                jalan ("\033[91;1mInvalid username and password")
-                time.sleep(1)
-             
-
 def loginFb(self, url, config):
         os.system('clear')
 	print(config.banner())
