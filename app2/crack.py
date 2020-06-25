@@ -92,11 +92,7 @@ class Brute:
                                                      [first_name]+'1234',
                                                      [first_name]+'12345',
                                                      [last_name]+'123',
-                                                     'sayang',
-                                                     'anjing',,
-                                                     'bangsat',
-                                                     'doraemom',
-                                                     'indonesia',
+                                                     'sayang', 'anjing', 'bangsat', 'indonesia', 'doraemon',
 					]
 				self.target.append({'id': user['uid'], 'pw': listpass})
 			except: pass
