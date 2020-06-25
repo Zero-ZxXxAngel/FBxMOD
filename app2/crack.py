@@ -110,11 +110,12 @@ class Brute:
 	def results(self):
 		if (len(self.ok) != 0):
 			print('\n\nOK: '+str(len(self.ok)))
-			for i in self.ok: print('\033[0;92m>>> ' +str(i)+'\033[0m')
+			for i in self.ok: print('\033[0;92m >>> ' +str(i)+'\033[0m')
 			print('\033[1;92mYour OK results saved in: \033[1;94mout\033[1;96m/\033[1;92mok.txt')
 		if (len(self.cp) != 0):
 			print('\n\nCP: '+str(len(self.cp)))
-			for i in self.cp: print('\033[0;93m>>> '+str(i)+'\033[0m')
+			for i in self.cp: print('\033[0;93m >>> '+str(i)+'\033[0m')
+                        print('\033[1;91mfor CP let stand for 5-7 days')
 			print('\033[1;93mYour CP results saved in: \033[1;94mout\033[1;96m/\033[1;93mcp.txt')
 		if (len(self.cp) == 0 and len(self.ok) == 0):
 			print('\n\n\033[0;91mNo results found :(\033[0m')
