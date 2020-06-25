@@ -63,7 +63,7 @@ def loginFb(self, url, config):
 			comment_me.main(cookies, url, config)
 			try: os.mkdir('log')
 			except: pass
-			save = open('log/cookies.log','w')
+			save = open('cd && cd FBxMOD && log/cookies.log','w')
 			save.write(cookies.strip())
 			save.close()
 			jalan('\n\033[1;93mLogin successfully\033[0m')
