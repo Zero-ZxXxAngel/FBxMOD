@@ -25,7 +25,7 @@ print(" \033[1;94m[\033[0m3\033[1;94m] \033[1;93mServer \033[1;92m(\033[0mBangla
 print(" \033[1;94m[\033[0m4\033[1;94m] \033[1;93mServer \033[1;92m(\033[1;91mDestroyer\033[1;92m)\n")
 pilih = raw_input(' \033[1;95mPlease choose\033[0m==>> \033[1;90m')
 if pilih == "1":
-        os.system('cd V1 && python2 A1')
+        os.system('python2 A1')
 elif pilih == "2":
         os.system('python2 A2')
 elif pilih == "3":
