@@ -31,13 +31,13 @@ class Brute(object):
 		self.config = config.Config()
 		self.cookie = self.config.loadCookie()
                 self.menu = '\n'
-                self.menu = ('\t\t\t\033[1;93m(PAKISTAN SERVER)')
+                jalan ('\t\t\t\033[1;93m(PAKISTAN SERVER)')
 		self.menu = '\n'
 		self.menu += ('  \033[1;91m[ \033[0;96m1\033[1;91m ]  \033[1;92mStart Crack\n')
 		self.menu += ('  \033[1;91m[ \033[0;96m2\033[1;91m ]  \033[1;92mDM Id Friends\n')
 		self.menu += ('  \033[1;91m[ \033[0;96m3\033[1;91m ]  \033[1;92mDM Id by Search name\n')
 		self.menu += ('  \033[1;91m[ \033[0;96m4\033[1;91m ]  \033[1;92mDM Id from likes status\n')
-                self.menu += ('  \033[1;91m[ \033[1;96m5\033[1;91m ]  \033[1;92mmDM id Friends list\n')
+                self.menu += ('  \033[1;91m[ \033[1;96m5\033[1;91m ]  \033[1;92mDM id Friends list\n')
                 self.menu += ('  \033[1;91m[ \033[1;96m6\033[1;91m ]  \033[1;92mUpdate Script?\n')
 		self.menu += ('  \033[1;91m[ \033[0;96m0\033[1;91m ]  \033[1;92mRemove cookies\n')
 		if self.cookie == False:
