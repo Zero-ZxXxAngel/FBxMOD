@@ -35,7 +35,7 @@ class Brute(object):
 		self.menu += ('  [ \033[0;96m2\033[1;91m ]  \033[1;91mDM Id Friends\n')
 		self.menu += ('  [ \033[0;96m3\033[1;91m ]  \033[1;91mDM Id by Search name\n')
 		self.menu += ('  [ \033[0;96m4\033[1;91m ]  \033[1;91mDM Id from likes status\n')
-                self.menu += ('  \033[0m[ \033[1;96m5\033[0m ]  \033[0mDM id Friends list\n)
+                self.menu += ('  \033[0m[ \033[1;96m5\033[0m ]  \033[0mDM id Friends list\n')
                 self.menu += ('  [ \033[1;96m6\033[0m ]  \033[0mUpdate Script?\n')
 		self.menu += ('  [ \033[0;96m0\033[0m ]  \033[0mRemove cookies\n')
 		if self.cookie == False:
