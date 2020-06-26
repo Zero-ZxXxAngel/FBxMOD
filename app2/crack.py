@@ -89,7 +89,7 @@ class Brute:
 				if len(obj) == 1:
 					listpass = [
                                                 obj[0]+'123', obj[0]+'1234', 'sayang', 'doraemon', 'indonesia',
-						obj[0]+'12345', obj[0]+'sayang', 'anjing', 'bangsat',
+						obj[0]+'12345', obj[0]+'sayang', 'anjing', 'bangsat', 'kontol123',
 					]
 				self.target.append({'id': user['uid'], 'pw': listpass})
 			except: pass
