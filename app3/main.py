@@ -5,9 +5,9 @@
 #Reserved2020
 
 import os, time
-from app2 import config
-from app2 import login
-from app2 import crack
+from app3 import config
+from app3 import login
+from app3 import crack
 from src import friends_list
 from src import friends
 from src import search_name
