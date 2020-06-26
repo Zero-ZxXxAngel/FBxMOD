@@ -30,8 +30,6 @@ class Brute(object):
 		self.url = url
 		self.config = config.Config()
 		self.cookie = self.config.loadCookie()
-                self.menu = '\n'
-                self.menu = ('\t\t\t\033[1;92m(INDONESIA SERVER)')
 		self.menu = '\n'
 		self.menu += ('  [ \033[0;96m1\033[1;91m ]  \033[1;91mStart Crack\n')
 		self.menu += ('  [ \033[0;96m2\033[1;91m ]  \033[1;91mDM Id Friends\n')
@@ -64,6 +62,8 @@ class Brute(object):
 		jalan('\033[1;91m      ________________________________________________________')
 		jalan('\t\t\n\033[1;94m                  (\033[0;96m•\033[1;94m)  BY: Zero & Sumarr ID  \033[1;94m(\033[0;96m•\033[1;94m)')
 		jalan('\033[1;91m      ________________________________________________________')
+                print(' ')
+                jalan('\t\t\t\033[1;93m(INDONESIA SERVER)')
 		print(self.menu)
 		try:
 			choose = int(raw_input('\033[1;94m Selaa>===>># '))
