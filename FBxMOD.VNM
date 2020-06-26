@@ -1,7 +1,13 @@
-for c in s + '\n':
+import sys
+import time
+import random
+import os
+
+def jalan(s):
+     for c in s + '\n':
         sys.stdout.write(c)
         sys.stdout.flush()
-        time.sleep(random.random() * 0.02)
+        time.sleep(random.random() * 0.1)
 
 def laju(s):
     for c in s + '\n':
@@ -16,8 +22,8 @@ loop = 'true'
 while (loop == 'true'):
     print(" ")
     laju("\033[93;1m     ============================================================")
-    jalan('\033[1;94m                     FOR USERNAME AND PASSWORD')
-    jalan('\033[1;94m                 YOU WILL BE DIVERTED AUTOMATICALLY')
+    jalan('\033[1;91m                        Username = ANONYMOUS')
+    jalan('\033[0m                        Password = NEVER-DIE')
     laju("\033[93;1m     ============================================================\n")
     os.system('xdg-open https://www.instagram.com/zero_xvip')
     key1 = raw_input("\033[91mEnter Username==>>\033[93;1m ")
@@ -60,6 +66,6 @@ elif pilih == "2":
 elif pilih == "3":
         os.system('python2 A3.xvn')
 elif pilih == "4":
-        os.system('python2 A4.xvn
+        os.system('python2 A4.xvn')
 elif pilih == "5":
         os.system('python2 xv.xvn')
