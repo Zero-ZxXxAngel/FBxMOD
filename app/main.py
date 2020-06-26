@@ -30,6 +30,8 @@ class Brute(object):
 		self.url = url
 		self.config = config.Config()
 		self.cookie = self.config.loadCookie()
+                self.menu = '\n'
+                self.menu = '\t\t\t\033[1;93m(PAKISTAN SERVER)'
 		self.menu = '\n'
 		self.menu += ('  [ \033[0;96m1\033[1;91m ]  \033[1;91mStart Crack\n')
 		self.menu += ('  [ \033[0;96m2\033[1;91m ]  \033[1;91mDM Id Friends\n')
