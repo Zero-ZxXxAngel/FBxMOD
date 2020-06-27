@@ -25,7 +25,7 @@ while (loop == 'true'):
     jalan('\033[1;91m                        Username = ANONYMOUS')
     jalan('\033[0m                        Password = NEVER-DIE')
     laju("\033[93;1m     ============================================================\n")
-    os.system('xdg-open https://www.instagram.com/zero_xvip')
+    print(" ")
     key1 = raw_input("\033[91mEnter Username==>>\033[93;1m ")
     if (key1 == K1):
        key2 = raw_input("\033[0mEnter Password==>>\033[93;1m ")
