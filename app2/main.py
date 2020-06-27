@@ -31,7 +31,7 @@ class Brute(object):
 		self.config = config.Config()
 		self.cookie = self.config.loadCookie()
 		self.menu = '\n'
-		self.menu += ('  [ \033[0;96m1\033[1;91m ]  \033[1;91mStart Crack\n')
+		self.menu += ('  \033[1;91m[ \033[0;96m1\033[1;91m ]  \033[1;91mStart Crack\n')
 		self.menu += ('  [ \033[0;96m2\033[1;91m ]  \033[1;91mDM Id Friends\n')
 		self.menu += ('  [ \033[0;96m3\033[1;91m ]  \033[1;91mDM Id by Search name\n')
 		self.menu += ('  [ \033[0;96m4\033[1;91m ]  \033[1;91mDM Id from likes status\n')
