@@ -7,13 +7,13 @@ def jalan(s):
      for c in s + '\n':
         sys.stdout.write(c)
         sys.stdout.flush()
-        time.sleep(random.random() * 0.1)
+        time.sleep(random.random() * 0.01)
 
 def laju(s):
     for c in s + '\n':
         sys.stdout.write(c)
         sys.stdout.flush()
-        time.sleep(random.random() * 0.05)
+        time.sleep(random.random() * 0.07)
 
 K1 = "ANONYMOUS"
 K2 = "NEVER-DIE"
@@ -21,10 +21,10 @@ K2 = "NEVER-DIE"
 loop = 'true'
 while (loop == 'true'):
     print(" ")
-    laju("\033[93;1m     ============================================================")
-    jalan('\033[1;91m                        Username = ANONYMOUS')
-    jalan('\033[0m                        Password = NEVER-DIE')
-    laju("\033[93;1m     ============================================================\n")
+    jalan("\033[93;1m     ============================================================")
+    laju('\033[1;91m                        Username = ANONYMOUS')
+    laju('\033[0m                        Password = NEVER-DIE')
+    jalan("\033[93;1m     ============================================================\n")
     print(" ")
     key1 = raw_input("\033[91mEnter Username==>>\033[93;1m ")
     if (key1 == K1):
@@ -32,12 +32,12 @@ while (loop == 'true'):
        if (key2 == K2):
 
                 print(" ")
-                jalan ("\033[96;1mwelcome \033[1;96mto \033[1;96mFBxMOD tools ")
+                laju ("\033[96;1mwelcome \033[1;96mto \033[1;96mFBxMOD tools ")
                 time.sleep(1)
                 loop = 'false'
     else:
                 print(" ")
-                jalan ("\033[91;1mInvalid username and password")
+                laju ("\033[91;1mInvalid username and password")
                 time.sleep(1)
 
 
