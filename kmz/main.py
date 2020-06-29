@@ -15,7 +15,7 @@ from src import likes
 from bs4 import BeautifulSoup as parser
 import time
 import sys
-		import random
+import random
 
 
 
