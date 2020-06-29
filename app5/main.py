@@ -5,9 +5,9 @@
 #Reserved2020
 
 import os, time
-from app import config
-from app import login
-from app import crack
+from app5 import config
+from app5 import login
+from app5 import crack
 from src import friends_list
 from src import friends
 from src import search_name
@@ -31,13 +31,13 @@ class Brute(object):
 		self.config = config.Config()
 		self.cookie = self.config.loadCookie()
 		self.menu = '\n'
-		self.menu += ('  \033[1;91m[ \033[0;96m1\033[1;91m ]  \033[1;92mStart Crack\n')
-		self.menu += ('  \033[1;91m[ \033[0;96m2\033[1;91m ]  \033[1;92mDM Id Friends\n')
-		self.menu += ('  \033[1;91m[ \033[0;96m3\033[1;91m ]  \033[1;92mDM Id by Search name\n')
-		self.menu += ('  \033[1;91m[ \033[0;96m4\033[1;91m ]  \033[1;92mDM Id from likes status\n')
-                self.menu += ('  \033[1;91m[ \033[1;96m5\033[1;91m ]  \033[1;92mDM id Friends list\n')
-                self.menu += ('  \033[1;91m[ \033[1;96m6\033[1;91m ]  \033[1;92mUpdate Script?\n')
-		self.menu += ('  \033[1;91m[ \033[0;96m0\033[1;91m ]  \033[1;92mRemove cookies\n')
+		self.menu += ('  \033[1;91m[ \033[0;96m1\033[1;91m ]  \033[1;93mStart Crack\n')
+		self.menu += ('  \033[1;91m[ \033[0;96m2\033[1;91m ]  \033[1;93mDM Id Friends\n')
+		self.menu += ('  \033[1;91m[ \033[0;96m3\033[1;91m ]  \033[1;93mDM Id by Search name\n')
+		self.menu += ('  \033[1;91m[ \033[0;96m4\033[1;91m ]  \033[1;93mDM Id from likes status\n')
+                self.menu += ('  \033[1;91m[ \033[1;96m5\033[1;91m ]  \033[1;93mDM id Friends list\n')
+                self.menu += ('  \033[1;91m[ \033[1;96m6\033[1;91m ]  \033[1;93mUpdate Script?\n')
+		self.menu += ('  \033[1;91m[ \033[0;96m0\033[1;91m ]  \033[1;91mRemove cookies\n')
 		if self.cookie == False:
 			login.loginFb(self, self.url, self.config)
 			self.cookie = self.config.loadCookie()
@@ -63,7 +63,7 @@ class Brute(object):
 		jalan('\t\t\n\033[1;94m                  (\033[0;96m•\033[1;94m)  BY: Zero & Sumarr ID  \033[1;94m(\033[0;96m•\033[1;94m)')
 		jalan('\033[1;91m      ________________________________________________________')
                 print(' ')
-                jalan('\t\t\t\033[1;93m(PAKISTAN SERVER)')
+                jalan('\t\t\t\033[1;93m(INDIA SERVER)')
 		print(self.menu)
 		try:
 			choose = int(raw_input('\033[1;94m Selaa>===>># '))
