@@ -2,7 +2,7 @@
 # coding=utf-8
 
 import os, sys, shutil
-from app6 import main as app
+from kmz import main as app
 import time
 import sys
 import random
