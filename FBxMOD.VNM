@@ -1,0 +1,77 @@
+import sys
+import time
+import random
+import os
+
+def jalan(s):
+     for c in s + '\n':
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(random.random() * 0.005)
+
+def laju(s):
+    for c in s + '\n':
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(random.random() * 0.07)
+
+K1 = "ANONYMOUS"
+K2 = "NEVER-DIE"
+
+loop = 'true'
+while (loop == 'true'):
+    print(" ")
+    jalan("\033[93;1m     ============================================================")
+    laju('\033[1;91m                        Username = ANONYMOUS')
+    laju('\033[0m                        Password = NEVER-DIE')
+    jalan("\033[93;1m     ============================================================\n")
+    print(" ")
+    key1 = raw_input("\033[91mEnter Username==>>\033[93;1m ")
+    if (key1 == K1):
+       key2 = raw_input("\033[0mEnter Password==>>\033[93;1m ")
+       if (key2 == K2):
+
+                print(" ")
+                laju ("\033[96;1mwelcome \033[1;96mto \033[1;96mFBxMOD tools ")
+                time.sleep(1)
+                loop = 'false'
+    else:
+                print(" ")
+                laju ("\033[91;1mInvalid username and password")
+                time.sleep(1)
+
+
+
+os.system('clear')
+jalan("\t\t\033[1;91m____________     ___  ______________")
+jalan("\t\t\033[1;91m|  ___| ___ \    |  \/  |  _  |  _  |")
+jalan("\t\t\033[1;91m| |_  | |_/ /_  _| .  . | | | | | | |")
+jalan("\t\t\033[0m|  _| | ___ \ \/ / |\/| | | | | | | |")
+jalan("\t\t\033[0m| |   | |_/ />  <| |  | \ \_/ / |/ /")
+jalan("\t\t\033[0m\_|   \____//_/\_\_|  |_/\___/|___/")
+jalan("\t\t\033[1;91mFACEBOOK HACK SCR\033[0mIPT FROM INDONESIA\n")
+
+print(" ")
+print("\033[1;96m Server list\n")
+jalan(" \033[1;94m[\033[0m1\033[1;94m] \033[1;93mServer \033[1;92m(\033[1;94mPakistan\033[1;92m)")
+jalan(" \033[1;94m[\033[0m2\033[1;94m] \033[1;93mServer \033[1;92m(\033[1;94mIndonesia\033[1;92m)")
+jalan(" \033[1;94m[\033[0m3\033[1;94m] \033[1;93mServer \033[1;92m(\033[1;94mBangladesh\033[1;92m)")
+jalan(" \033[1;94m[\033[0m4\033[1;94m] \033[1;93mServer \033[1;92m(\033[1;94mIndia\033[1;92m)")
+jalan(" \033[1;94m[\033[0m5\033[1;94m] \033[1;93mServer \033[1;92m(\033[1;94mAmerika\033[1;92m)")
+jalan(" \033[1;94m[\033[0m6\033[1;94m] \033[1;93mServer \033[1;92m(\033[1;91mDestroyer\033[1;92m)")
+jalan(" \033[1;94m[\033[0m7\033[1;94m] \033[1;94mBrute Force Attack")
+pilih = raw_input(' \033[1;95mPlease choose\033[0m==>> \033[1;90m')
+if pilih == "1":
+        os.system('python2 A1.xvn')
+elif pilih == "2":
+        os.system('python2 A2.xvn')
+elif pilih == "3":
+        os.system('python2 A3.xvn')
+elif pilih == "4":
+        os.system('python2 A5.xvn')
+elif pilih == "5":
+        os.system('python2 A6.xvn')
+elif pilih == "6":
+        os.system('python2 A4.xvn')
+elif pilih == "7":
+        os.system('python2 xv.xvn')
